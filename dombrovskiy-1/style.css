@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+   }
+   
+   *, ::before, ::after {
+    box-sizing: inherit;
+   }
+body {
+        /* margin: auto; */
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+  
+    }
+div {
+    max-width: 960px; /*здесь указывать ширину cайта или в body*/
+    margin: auto;
+    }
+header {
+    background-color: #ff7100;
+    text-align: center;
+    }
+
+    
+
+nav ul, a {
+        list-style: none;
+        text-decoration: none;
+        color: inherit;
+        
+    }
+  .menu {   
+
+        float: left;
+        padding: 10px 50px;    
+    }
+    
+    article {
+       
+        float: left;
+        margin:20px 0;
+        background-color:#fff468;
+        width: 600px;
+    }
+    article h2, p {
+          padding: 0 30px 10px;
+    }
+    aside {
+        margin:20px 0;
+        padding: 10px 30px;
+        float: right;
+        width: 230px;
+        background-color: #3cb878;
+    }
+    aside ul {
+        padding:0px  0px 0px 20px;
+    }
+    footer {
+        clear: both;
+        padding:0;
+        width: 960px;/*Почему header растянулся на всю ширину, а footer'у нужно задать ширину?*/
+        float: left;
+        background-color: #cfc9dd;     
+    }
+
+aside p  {
+    
+    padding: 0px 20px 0px 0px;
+}
+
