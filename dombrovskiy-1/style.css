@@ -1,12 +1,10 @@
 html {  
     box-sizing: border-box; 
    }
-   
    *, ::before, ::after {
     box-sizing: inherit;
    }
-body {
-    
+body {  
     padding: 0;
     margin:0 auto;
     font-family: Geneva, Arial, Helvetica, sans-serif;
@@ -23,38 +21,31 @@ h1 {
     padding: 40px 0 0 0;
 }
 nav ul {
-    
         list-style: none; /*убираем маркеры списка*/
         margin: 0 0 0 0px; /*убираем отступы*/
         padding: 0 40px 60px 200px; /*убираем отступы*/
       }
 nav li {
-    
         float:left; /*Размещаем список горизонтально для реализации меню*/
         margin-right:30px; /*Добавляем отступ у пунктов меню*/
-        
       }
 nav a {
-
         color: inherit;
         text-decoration: none; /*убираем подчеркивание текста ссылок*/
       }
  main {
+     
     float: left;
      margin:20px 0 20px;
-     padding: 0; 
-     
-     
+     padding: 0;    
  }   
-article {
-        
+article {   
         float: left;
         margin:20px 0;
         background-color:#fff468;
         width: 600px;
         padding: 0 45px 20px 28px; 
     }
-
 aside {
         margin:-840px 0;
         padding: 10px 30px 180px;
@@ -64,18 +55,13 @@ aside {
     }
 aside ul {
         padding:0px  0px 0px 20px;
-    }
-
-    
+    }  
 aside p  {
-    
     padding: 0px 20px 0px 0px;
 }
     footer {
-        
-        clear: both;
-         
-        padding:15px 20px;
+        clear: both;  
+        padding:15px 28px;
         background-color: #cfc9dd;     
     }
 
