@@ -6,30 +6,27 @@
     box-sizing: inherit;
    }
    body {
-    width: 960px;
-    padding: 0; 
+    
     margin:0;
-    min-width: 700px;
 }
-    body, header, main, article, footer, .wrapper {
-    margin-left:auto;
-    margin-right: auto;
-} 
    .wrapper {
+    
     width: 960px;
-      
+    margin:0 auto;     
+   
 }
+                                                        /*header*/
    header img  {
        float:left;
-       margin-top:10px;
-       height: 180px;
+       margin:16px  24px;
+       height: 140px;
        border:1px solid black;
        border-radius: 100px;
     }
     header  h1 {
         float: left;
-        margin-top:10px;
-        margin-left: 10px;  
+        padding-top:55px;
+     
     }
     header ul {
         text-decoration: none;
@@ -42,7 +39,6 @@
     }
     header  a {
         display: block;
-        height: 20px;
         color: #000;
         text-decoration: none;
     }
@@ -50,85 +46,89 @@
         color: #fff;
         cursor: pointer;
     }
-    header {
-        width: 960px;
-        height: 200px;    
-    }
-    nav {
-        
-        float: left;
-        margin-top: 60px; /* управление высотой главного меню*/
-        height: 40px;
-        width: 500px;    
-        padding: 16px 24px; 
-}
-.top_menu{
-    float: left;
-    height: 200px;
-    width: 960px;
-    background-color: #ff7100;
-    padding-left: 20px;
-}
-main {
     
-    margin: 0;
- /*что делать с сэтим блоком он равен 0 по высоте,дать ему высоту?*/
+    nav {  
+        float: left;
+        padding-top: 75px; 
+        width: 650px;    
+        /* padding-top: 16px;  */
+        padding-right: 50px;
+    }
+header{
+    float: left;
+    width: 960px; 
+    background-color: #ff7100;  
+}
+
+                    /*header*/
+main {
+    float: left;
+    margin-top:24px;
+    width: 700px;
+    
+
 }
 article {
     float: left;
-    padding:16px 24px;
-    margin:24px 0 0 0;
+    padding: 16px 24px;
     background-color: #fff468;
-    /* height: 200px; */
-    width:680px;
-}
-article img {
-    float:left;
-    /* padding-right: 20px; */
-    height: 180px;
-    width: 140px;
+    margin-bottom: 24px;
+  
     
 }
-.article_item {
-    float: right;   
-    width: 450px;
-    /* height: 200px; */
+article img {
+float: left;
+margin-bottom:-50px;
+
+
+}
+article h2 {
+    padding-right: 40px;
+    margin: 0 10px;
+    
+   float: left;
+   line-height:0.8;
 }
 
-
 article a {
-    line-height: 0; /*чтобы выровнять высоту ccылки с картинкой*/
-    font-size: 22px;
+    
+    font-size: 22px; 
     color: #035dee;
     cursor: pointer;
     text-decoration: none;
     
 }
+
 article a:hover{
     color:#fff;
 }
-aside {
-    margin-top: 25px;
-    margin-left:20px;
-    /* margin-bottom: 24px */
-    padding: 16px 24px;
-    padding-bottom: 780px;
-    display: inline-block;
-    width: 260px;
-    height: 400px;
-    background-color: #3cb878;
+
+
+article p {
+float: left;
+
+  
+
 }
 
-.clear::after {
-	content: '';
-	display: block;
-	clear: both;
-}
-footer {
+aside {
     margin-top:24px;
+    margin-left:24px;
+    
+    width: 236px;
+    float: left;
+
+    background-color: #3cb878;
+    padding-bottom: 900px; 
+    padding-left:24px;
+}
+
+
+footer {
     padding: 16px 24px;
     background-color: #cfc9dd;
+    clear: both;
 }
-/* footer p {
+footer p {
     margin:  0;
-} */
+}
