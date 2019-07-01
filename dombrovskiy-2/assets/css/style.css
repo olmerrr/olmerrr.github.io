@@ -5,40 +5,40 @@
    *, ::before, ::after {
     box-sizing: inherit;
    }
-   body {
-    
+   body {   
     margin:0;
 }
    .wrapper {
-    
     width: 960px;
-    margin:0 auto;     
-   
+    margin:0 auto;       
 }
                                                         /*header*/
-   header img  {
-       float:left;
-       margin:16px  24px;
+                                                     
+ header img  {
+        float:left;
        height: 140px;
        border:1px solid black;
        border-radius: 100px;
     }
-    header  h1 {
-        float: left;
-        padding-top:55px;
-        margin-right: 16px;
-     
+    .logo {
+        float:left;
     }
-    header ul {
+    header  h1 {
+        padding-top:35px;
+        padding-left: 16px;
+        float: left;
+    }
+    header ul {       
         text-decoration: none;
         float: right;
     }
-    header  li {
-        float:left;
+    header  li {   
+        float: left;
         list-style: none;
         padding-left:25px; /*растояние между пунктов меню*/     
     }
     header  a {
+
         display: block;
         color: #000;
         text-decoration: none;
@@ -47,18 +47,15 @@
         color: #fff;
         cursor: pointer;
     }
-    
     nav {  
-        float: left;
-        padding-top: 75px; 
-        /* width: 650px;     */
-        /* padding-top: 16px;  */
-        padding-right: 50px;
+   padding-top: 50px; 
+   padding-right: 20px;
     }
 header{
     float: left;
     width: 960px; 
     background-color: #ff7100;  
+    padding: 16px 24px;
 }
 
                     /*header*/
@@ -66,50 +63,36 @@ main {
     float: left;
     margin-top:24px;
     width: 700px;
-    
-
 }
 article {
-    float: left;
     padding: 16px 24px;
     background-color: #fff468;
     margin-bottom: 24px;
-   
-  
-    
+    padding-left:180px;  
 }
 article img {
-float: left;
-margin-bottom: -190px;
-
-
+    width: 139px;
+    margin-left: -155px;
+    float: left;
 }
 article h2 {
-    margin: 0 20px;
-    margin-left:14px;
-    float: left;
+    margin:0;
     line-height:0.8;
 }
 
 article a {
-    
-    font-size: 22px; 
     color: #035dee;
     cursor: pointer;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
-
 article a:hover{
     color:#fff;
 }
-
-
-article p {
-    float: left;
-    padding-left:165px;
+.clear::after {
+	content: "";
+	display: block;
+	clear: both;
 }
-
 aside {
     margin-top:24px;
     margin-left:24px;
