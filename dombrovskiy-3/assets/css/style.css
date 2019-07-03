@@ -7,6 +7,7 @@
    }
    body {   
     margin:0;
+    padding: 0;
 background-color: #000;
 }
 .wrapper {
@@ -39,8 +40,8 @@ article {
     margin: 0;
     max-width: 100%;
     max-height: 100%;
-    width: 300px;
-    height: 200px;
+    width: 318px;
+    height: 179px;
     background-color: #aab2bd;
 }
 
@@ -108,3 +109,4 @@ article {
    */
 
 
+   
