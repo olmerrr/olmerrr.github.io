@@ -20,24 +20,24 @@
         
    }
    /* article {   
-   width: 240px;
+   width: 190px;
    height: 140px;
     background-color: #fff;
 }
 
 
-
+/*  */
 
 .content__centering{
   
     justify-content: center; /*центрируем элемент по горизонтали */
-    /* align-items: center; /* и вертикали */
-    /* overflow: hidden; если элемент больше блока-родителя – обрезаем лишнее   */ */
-/*    
+     align-items: center; /* и вертикали */
+     overflow: hidden; /*если элемент больше блока-родителя – обрезаем лишнее   */
+   
     max-width: 100%;
     max-height: 100%;
-    width: 240px;
-    height: 140px;
+    width: 190px;
+    height: 110px;
    
     background-color: #aab2bd;
     
@@ -52,7 +52,7 @@ img {
 .border__img {
     border: 1px #fff solid; 
    border-radius:10px 10px 0 0 ;  
-} */ */
+} 
 
 
 
