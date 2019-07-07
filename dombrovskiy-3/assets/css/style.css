@@ -34,7 +34,7 @@ body {
 
 .card-news__information{
     width: 301px;
-    padding: 22px;       
+    padding: 22px 22px 16px; 
  }
 
 .card-news__title{  /* это элемент блока cart-news */
@@ -51,7 +51,11 @@ body {
     
 }
 
+.card-news__block-icon {
+    padding-top: 8px; /*двигаю иконки вниз*/
+}
 .card-news__info::before{
+   
     content:'';
     display: inline-block;
     height: 16px;
@@ -62,7 +66,8 @@ body {
 .card-news__info--icon_time::before {
     background-position: -50px -338px;
 }
-.card-news__information--icon_msg::before {
+.card-news__info--icon_msg::before {
+    margin-left: 10px; /* двигаю иконку сообщения*/
     background-position: -121px -338px;
 }
 
