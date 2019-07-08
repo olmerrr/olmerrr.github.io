@@ -8,11 +8,9 @@ html {
    }
 
 body {
- 
     background: #f0f2f5;
     font-family: Arial,sans-serif;
     margin: 24px 29px;
-    
 }
    
 .card-news {    /* разделитель между слвоами это дефис. это блок*/
@@ -65,7 +63,6 @@ body {
     background-position: -50px -338px;
 }
 .card-news__text-for-icon--icon_msg::before {
-   
     background-position: -121px -338px;
  } 
 
