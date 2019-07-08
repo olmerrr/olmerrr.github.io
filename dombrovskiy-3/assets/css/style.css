@@ -51,7 +51,14 @@ body {
 .card-news__icons {
     padding-top: 8px; /*двигаю иконки вниз*/
 }
-.card-news__text-for-icon::before{
+
+    .card-news__info{
+    vertical-align:top;
+    font-size:11px;
+    color: rgba(170, 178, 189, 0.6);
+     } 
+
+.card-news__info::before{
     content:'';
     display: inline-block;
     height: 16px;
@@ -59,16 +66,12 @@ body {
     background-image: url(../img/article-card.png);      
 }
 
-.card-news__text-for-icon--icon_time::before {
+.card-news__info--time::before {
     background-position: -50px -338px;
 }
-.card-news__text-for-icon--icon_msg::before {
+.card-news__info--msg::before {
     background-position: -121px -338px;
  } 
 
- .card-news__text-for-icon{
-    vertical-align:top;
-    font-size:11px;
-    color: rgba(170, 178, 189, 0.6);
- } 
+ 
  
