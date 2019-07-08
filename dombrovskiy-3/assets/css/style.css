@@ -47,22 +47,20 @@ body {
 .card-news__content{
     font-size: 13px;
     color: rgb(170, 178, 189);
-    line-height: 20px;
-    
+    line-height: 20px;  
 }
 
-.card-news__block-icon {
+.card-news__icons {
     padding-top: 8px; /*двигаю иконки вниз*/
 }
 .card-news__info::before{
-   
     content:'';
     display: inline-block;
     height: 16px;
     width: 16px;
-    background-image: url(../img/article-card.png);
-    
+    background-image: url(../img/article-card.png);   
 }
+
 .card-news__info--icon_time::before {
     background-position: -50px -338px;
 }
@@ -73,7 +71,7 @@ body {
 
 .card-news__text-for-icon{
     vertical-align: text-top;
-     font-size:11px;
-     color: rgba(170, 178, 189, 0.6);
+    font-size:11px;
+    color: rgba(170, 178, 189, 0.6);
  }
  
