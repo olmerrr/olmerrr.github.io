@@ -53,25 +53,25 @@ body {
 .card-news__icons {
     padding-top: 8px; /*двигаю иконки вниз*/
 }
-.card-news__info::before{
+.card-news__text-for-icon::before{
     content:'';
     display: inline-block;
     height: 16px;
     width: 16px;
-    background-image: url(../img/article-card.png);   
+    background-image: url(../img/article-card.png);      
 }
 
-.card-news__info--icon_time::before {
+.card-news__text-for-icon--icon_time::before {
     background-position: -50px -338px;
 }
-.card-news__info--icon_msg::before {
-    margin-left: 10px; /* двигаю иконку сообщения*/
+.card-news__text-for-icon--icon_msg::before {
+   
     background-position: -121px -338px;
-}
+ } 
 
-.card-news__text-for-icon{
-    vertical-align: text-top;
+ .card-news__text-for-icon{
+    vertical-align:top;
     font-size:11px;
     color: rgba(170, 178, 189, 0.6);
- }
+ } 
  
