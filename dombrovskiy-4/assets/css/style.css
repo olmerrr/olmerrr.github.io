@@ -19,7 +19,7 @@ a {
     flex-direction: column;
     padding: 8px;  
 } 
-header {
+.header__menu {
     display: flex;
      flex-direction: row;
    
