@@ -39,7 +39,7 @@ body {
     font-size: 18px;
     font-weight:400;
     color:#434a54;
-    margin-bottom: -6px;     
+         
 }
 
 .card-news__content{
@@ -48,9 +48,6 @@ body {
     line-height: 20px;  
 }
 
-.card-news__icons {
-    padding-top: 8px; /*двигаю иконки вниз*/
-}
 
     .card-news__info{
     vertical-align:top;
