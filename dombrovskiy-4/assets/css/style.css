@@ -1,0 +1,37 @@
+
+html {  
+    box-sizing: border-box; 
+   }
+
+*, ::before, ::after {
+    box-sizing: inherit;
+   }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}   
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;  
+} 
+header {
+    display: flex;
+     flex-direction: row;
+   
+    box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06);
+      }
+
+.header__logo-title {
+    color: #8cc152;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* display:inline-block; */
+    
+}
+
