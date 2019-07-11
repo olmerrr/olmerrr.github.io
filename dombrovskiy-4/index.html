@@ -12,18 +12,62 @@
 <body>
         <div class="wrapper">
                 <header class = "header__menu">
-                        
-                          <a href="#" class="header__logo"><img src="assets/img/logo.png" alt="umbrella"><h2 class = "header__logo-title">Мэрри попинс</h2></a> 
-                      
+                                <a href="#" class = "header__logo-link"> <img src="assets/img/logo.png" alt="header-logo" class = "header__logo-img"/></a>
+                                <a href="#" class = "header__title-link"><h2 class = "header__logo-title"> Мэрри попинс</h2></a>
+                                        
+                <div class="wrapper__burger">
+                       <input type="checkbox" id= "check-menu">
+                       <label for="check-menu">Menu</label>
+                       <div class="burger-line first"></div> 
+                       <div class="burger-line second"></div>
+                       <div class="burger-line third"></div>
+                       <div class="burger-line fourth"></div>
+                       <nav class="main-menu">
+                               <a href="#">Каталог</a>
+                               <a href="#">Новости</a>
+                               <a href="#">Доставка</a>
+                               <a href="#">Контакты</a>
+                               <a href="#">Что будем делать?</a>
+                       </nav>
+                </div>
                         
                 </header>
-                <main></main>
-                <footer></footer>
-        
+               
+        <main class = "main"> <!-- в интернете нашел такой способ присваения классов  основным блокам,норм?  -->
+                <div class = "products">                      
+                         <section class = "products__product-1">
+                                <img src="assets/img/umbrella1.jpg" alt="umbrella-1" class = "products__img">
+                                <h3 class = "products__title">Зонт «Банан»</h3>
+                                <div class="products__catalog"> Полуавтомат</div>
+                                <div class="products__colors"> Жёлтый</div>
+                                <div class="products__weight"> 0.4 кг</div>
+                                <div class="products__lenght"> 103 см</div>
+                                <div class="products__price">218 грн</div>
+                                <input type="submit" class = "products__btn">  <!-- Может лучше button?  -->
+                       </section>
+                       <section class = "products__product-2">
+                                <img src="assets/img/umbrella2.jpg" alt="umbrella-2" class = "products__img">
+                                <h3 class = "products__title">Зонт с цвета...</h3>
+                                <div class="products__catalog"> Автомат</div>
+                                <div class="products__colors">Розовый</div>
+                                <div class="products__weight"> 0.45 кг</div>
+                                <div class="products__lenght"> 120 см</div>
+                                <div class="products__price">1600 грн</div>
+                                <input type="submit" class = "products__btn">  <!-- Может лучше button?  -->
+                       </section>
+                       
+                </div>
+
+        </main>
+        <footer class = "footer">
+                <div class="product-history"> 
+                <img src="assets/img/manpng.png" alt="man" class= "product-history__author">
+                <h3 class = "product-history__title">История</h3>
+                <p class = "product-history__text">
+                                Зонт существовал ещё в XI веке до н. э. Именно это время считается временем изобретения зонта. Родиной зонта считают Китай или Египет. В обеих названных странах зонт считался символом власти, только фараоны или императоры и приближённые.
+                </p>
+                </div>
+        </footer>
         </div>
-
-
-
-
 </body>
 </html>
