@@ -17,6 +17,7 @@ html {
    width: 320px;
     padding: 8px;  
     background-color: #f0f2f5;
+    
 } 
 .header__menu {
     display: flex;
@@ -49,7 +50,7 @@ html {
 .header__gamburger {
     width: 20px;
     height: 20px;
-    display:flex;
+    /* display:flex; */
 }
 
 
@@ -58,42 +59,63 @@ html {
 
 .main {
    margin-top:24px; 
+  
 }
 .products {
-    
-    
-    display:flex;
-    
+   
+    display:flex; 
+    height: auto;
+   
     
 }
-.products__picture-holder {
-    background: #fff;
+.products__img {
+    
+   margin: auto;
+
     width: 125px;
-    height: 120px;
+    height: 120px; 
     
-}
+} 
 .products__product-1 {
+   
+    margin: 8px;
+    flex-direction:column;
+    display:flex;
+    width: auto;
+    height: auto;
+    background: #fff;
     
-    flex-direction: column; 
-    background-color: #ff1;
-    padding: 16px;
     
 }
 .products__product-2{
-    background-color: #fff;
-    padding: 16px;
-   
+    margin: 8px;
+    flex-direction:column;
+    flex-shrink: 2;
+    width: auto;
+    height: auto;
+    background: #fff;
+    display:flex;
+    flex-shrink: 1;
 }
 .specifications { 
+    padding: 16px;
     list-style-type: none;
-    
+    color:#666769;
+}
+.products__title {
+    font-size: 18px;
+    text-align: center;
+    color: #010101;
+    font-weight: 400;
 }
 
 .category {
-    
+ font-size: 14px;
+ line-height: 24px;   
 }
 .products__price {
-    
+    padding-top: 8px;
+    padding-right: 8px;
     font-size: 24px;
     color: #a0d468;
 }
@@ -105,11 +127,22 @@ html {
     color:#fff;
     border-radius: 0 0 5px 5px;
     /* padding: 5px; */
-   
 	user-select: none; /* Убираем текстовое выделение */
 	text-decoration: none;	/* Убираем подчеркивание */
-	outline: none; /* Убираем контур вокруг ссылки */
-	
-	padding: 4px 8px; /* Отступ от текста до рамки */
-	}
+	outline: none; /* Убираем контур вокруг ссылки *
+    padding: 4px 8px; /* Отступ от текста до рамки */
+    text-align: center;
+    padding: 8px;
+    }
+.products__btn--trash::before {
+    content:'';
+    display: inline-block;
+    height: 18px;
+    width: 21px;
+    background-image: url(../img/umbrella.png);      
+    
+    }
 
+.products__btn--trash::before {
+    background-position: -34px -928px;
+}
