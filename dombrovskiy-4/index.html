@@ -12,24 +12,24 @@
 <body>
         <div class="wrapper">
 
-                <header class = "header__menu">
-                                <a href="#" class = "header__link"> 
-                                        <img src="assets/img/logo.png" alt="header-logo" class = "header__logo-img">
-                                         <h2 class = "header__logo-title"> Мэрри попинс</h2>
+                <header class = "menu">
+                                <a href="#" class = "menu__link"> 
+                                        <img src="assets/img/logo.png" alt="menu-logo" class = "menu__logo-img">
+                                         <h2 class = "menu__logo-title"> Мэрри попинс</h2>
                                 </a>       
               
                
-                 <nav class="header__navigation">
-                        <div class="header__menuToggle">
-                                 <input type="checkbox" class="header__hamburger">
+                 <nav class="menu__navigation">
+                        <div class="menu__toggle">
+                                 <input type="checkbox" class="menu__hamburger">
                                                   
                                                 
-                                <ul class="menu">
+                                <ul class="menu__specifications">
                                         <li><a href="#" class="menu__specifications">Каталог</a>
-                                <ul class="menu__specifications_submenu">
-                                        <li><a href="#" class="menu__specifications_submenu">Механика</a></li>
-                                        <li><a href="#" class="menu__specifications_submenu">Автомат</a></li>
-                                        <li><a href="#" class="menu__specifications_submenu">Полуавтомат</a></li>
+                                <ul class="menu__specifications__submenu">
+                                        <li><a href="#" class="menu__specifications__submenu">Механика</a></li>
+                                        <li><a href="#" class="menu__specifications__submenu">Автомат</a></li>
+                                        <li><a href="#" class="menu__specifications__submenu">Полуавтомат</a></li>
                                 </ul>
                                 </li>
                                 <li><a href="#" class="menu__specifications">Новости</a></li>
@@ -38,7 +38,7 @@
                                 <li><a href="#" class="menu__search">Что будем искать?</a></li>
                                                     
                                 </ul>
-                                <a href="#" class="">В корзине пусто</a>
+                                <a href="#" class="menu__specifications">В корзине пусто</a>
                                 </div>
                                                     
                 
@@ -49,52 +49,47 @@
                 
                   
                              
-                <div class = "products">                      
-                         <section class = "products__product-1">
+                                   
+                         <section class = "products">
                                
                                          <img src="assets/img/umbrella1.jpg" alt="umbrella-1" class = "products__img">
                                
                                 <h3 class = "products__title">Зонт «Банан»</h3>
-                                <ul class = "specifications">
-                                        <li class="category">Полуавтомат</li>
+                                <ul class = "products__specifications">
+                                        <li class="products__category">Полуавтомат</li>
                                         <li>Жёлтый</li>
                                         <li>0.4 кг</li>
                                         <li>103 см</li>
                                         <li class="products__price">218 грн</li>
                                 </ul>
-                               
-                                <a href="#" class = "products__btn">
-                                                <span class="products__btn--trash">в корзину</span> 
-                                                    
-                                </a> 
+                               <div class="products__btn">
+                                  <a href="#" class = "products__btn products__btn--buy">в корзину</a> 
+                               </div>
                        </section>
-                       <section class="products__product-2">
+                       <section class = "products">
                                
-                                          <img src="assets/img/umbrella2.jpg" alt="umbrella-2" class="products__img">
-                              
-                                          <h3 class = "products__title">Зонт с цвета...</h3>
-                                <ul class = "specifications">
-                                        <li class="category">Автомат</li>
-                                        <li>Розовый</li>
-                                        <li>0.45 кг</li>
-                                        <li>120 см</li>
-                                        <li class="products__price">1600 грн</li>
-                                </ul>
-                                 
-                                <a href="#" class = "products__btn">
-                                         
-                                <span class="products__btn--trash">в корзину</span> 
-                                   
-                                </a>
-                       </section>
+                                <img src="assets/img/umbrella2.jpg" alt="umbrella-1" class = "products__img">
+                      
+                       <h3 class = "products__title">Зонт с цвета...</h3>
+                       <ul class = "products__specifications">
+                               <li class="products__category">Автомат</li>
+                               <li>Розовый</li>
+                               <li>0.45 кг</li>
+                               <li>120 см</li>
+                               <li class="products__price">1600 грн</li>
+                       </ul>
+                      <div class="products__btn">
+                         <a href="#" class = "products__btn products__btn--buy">в корзину</a> 
+                      </div>
+              </section>
                        
-                </div>
+              
 
         </main>
-        <article class = "article">
+        <article class = "product-news">
                 <img src="assets/img/manpng.png" alt="man" class= "product-news__author">
-                <h2>Kenya Gold Coffee</h2> 
-                <p>
+                <h2 class="product-news__title">Kenya Gold Coffee</h2> 
+                <p class="product-news__text"> 
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
         </article>
