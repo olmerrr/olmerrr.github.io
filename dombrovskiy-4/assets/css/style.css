@@ -44,15 +44,15 @@ html {
 .menu__toggle {
     display: block;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 80px;
+    right: 80px;
     
-    z-index: 1;
+
     
     -webkit-user-select: none;
     user-select: none;
 }
-.menu__hamburger::before {
+/* .menu__hamburger::before {
    
     content:'';
     display: inline-block;
@@ -60,51 +60,75 @@ html {
     height: 20px;
     background-image: url(../img/umbrella.png);
     background-position: -278px -22px;
-    /* position: relative;
-    top:5px;
-    left:4px; */
-}
-/* .menu__hamburger {
-    display: block;
-    width: 40px;
-    height: 32px;
     position: absolute;
-    top: -7px;
-    left: -5px;
+    top:10px;
+    left:300px;
     
+} */
+
+  .menu__hamburger {
+     
+    position: relative;
     cursor: pointer;
+    display: none;
+   
     
-    opacity: 0; /* hide this */
-    /* z-index: 2; and place it over the hamburger */
     
-    /* -webkit-touch-callout: none; */
-/* } */ */
+ }  
+ .menu__toggle {
+    width: 32px; /* ШИРИНА РИСУНКА */ 
+    height: 26px; /* ВЫСОТА РИСУНКА */ 
+    display: block; /* БЛОЧНЫЙ ЭЛЕМЕНТ */
+    position: relative; /* ОТНОСИТЕЛЬНОЕ ПОЗИЦИОНИРОВАНИЕ */
+    width: 21px;
+    height: 20px;
+    background-image: url(../img/umbrella.png);
+    background-position: -278px -22px;
+    bottom:58px;
+    left:170px;
+    position: relative;
+}
 .menu__specifications {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
+    
+    top:100px;
+    left: 30px;
+    width: 200px;
+    /* margin: -100px 0 0 -50px; */
+    /* padding: 50px; */
+    /* padding-top: 125px; */
     
     background: #ededed;
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    color:#000;
+    font-size: 18px;
+    /* -webkit-font-smoothing: antialiased; */
     
     
   
 }
 .menu__specifications li {
+    
     padding: 10px 0;
-    font-size: 22px;
+    
 }
 
 /* 
 #menuToggle input:checked ~ ul
 {
   transform: none;
+
+
+
 } */
 
-
+.menu__submenu {
+    list-style-type: none;
+    text-decoration: none;
+    color:#000;
+    font-size: 18px;
+    padding-left: 8px;
+}
 
 /* header  */
 
@@ -118,9 +142,9 @@ html {
 
 .products {
 
-    padding: 16px;
+    padding: 16px 8px;
     background-color:#fff;
-    border: 2px solid black;
+   
   
 }
 .products__img {
@@ -134,11 +158,11 @@ html {
     font-size: 18px;
     color:#010101;
     text-align: center;   
-    /* padding-bottom: 16px; */
+    padding-bottom: 16px;
 }
 .products__category { 
    
-    /* padding: 2px 16px; */
+    padding: 2px 16px;
 
     list-style-type:none;
     font-size: 14px;
@@ -148,6 +172,8 @@ html {
     list-style-type:none;
     font-size: 24px;
     color:#a0d468;
+    
+    padding:16px;
  
 }
 
@@ -157,6 +183,8 @@ html {
     font-size: 14px;
     border-radius: 0 0  5px 5px; 
     display: flex;
+    align-self: auto;
+    align-content: flex-end;
     padding: 8px; 
     text-decoration: none; /* Убираем подчёркивание */
     color: #fff; /* Цвет текста */
@@ -165,7 +193,9 @@ html {
    
     
 }
-
+.products__btn--buy {
+   
+}
 .products__btn--buy::before {
 content:'';
 display: inline-block;
@@ -173,9 +203,7 @@ width: 21px;
 height: 19px;
 background-image: url(../img/umbrella.png);
 background-position: -35px -928px;
-position: relative;
-top:5px;
-left:4px;
+margin-right: 8px;
 
 }
 /* products */
