@@ -26,11 +26,13 @@ html {
 /* header  */
   .menu {
     background-color: #fff;
-    display:flex;
+    
   }
   .logo {
       display:flex;
-      text-decoration: none; 
+      align-items: center;   
+      text-decoration: none;
+      padding: 8px; 
   }
   .logo__title {
       width: 80px;
@@ -47,14 +49,11 @@ html {
   }
   
 
-  .menu__hamburger {
+.menu__hamburger {
      
     position: relative;
     cursor: pointer;
-    display: none;
-   
-    
-    
+    display: none;    
  }  
  .menu__toggle {
   
@@ -64,19 +63,14 @@ html {
     height: 20px;
     background-image: url(../img/umbrella.png);
     background-position: -278px -22px;
-    top:16px;
+    top:20px;
     left:290px;
     user-select: none;
-/* header  */
+
 }
 .menu__navigation {
-   
-  
-  
     background-color: rgb(255, 255, 255);
-    box-shadow: inset 0 1px 0 0 rgba(236, 236, 236, 0.5);
-   
-      
+    box-shadow: inset 0 1px 0 0 rgba(236, 236, 236, 0.5);    
 }
 .menu__specifications {
     display: block;
@@ -91,15 +85,7 @@ html {
      background-color: rgb(255, 255, 255);
    box-shadow: inset 0 1px 0 0 rgba(236, 236, 236, 0.5);
 }
-.menu__specifications--search::after {
-    content:'';
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-image: url(../img/umbrella.png);
-    background-position: -23px -448px;
-    /* margin-right: 8px;    */
-}
+
 .menu__submenu {
     display: block;
     list-style-type: none;
@@ -134,16 +120,20 @@ html {
     background-position: -21px -524px;
     margin-right: 14px;
 }
-.menu__specifications--search::before {
+.menu__specifications--search::after {
     content:'';
     display: inline-block;
     width: 18px;
     height: 18px;
     background-image: url(../img/umbrella.png);
     background-position: -23px -468px;
-    position: relative;
+    position: absolute;
+    left:8px;
     
 }
+
+/* header  */
+
 /* products */
 .main {
     display: flex;   
