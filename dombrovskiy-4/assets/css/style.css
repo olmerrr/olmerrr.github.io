@@ -15,8 +15,7 @@ html {
     width: 100%;
 }
   .wrapper {
-      width: 300px;
-      /* margin: 0 auto; */
+      width: 330px;
       background-color: #f0f2f5;
       height: auto;
   }
@@ -98,29 +97,27 @@ html {
     box-shadow: inset 0 1px 0 0 rgba(236, 236, 236, 0.5); 
 }
 
-.menu__status-btn--buy {
-    height: auto;
+.menu__status-btn--buy { 
     font-size: 18px;
     display: block;
-    align-self: auto;
-    align-content: flex-end;
     padding: 16px; 
-    text-decoration: none; /* Убираем подчёркивание */
-    color: #fff; /* Цвет текста */
+    text-decoration: none; 
+    color: #fff; 
     background-color: #a0d468;
+   
 }
 .menu__status-btn--buy::before {
     content:'';
+    vertical-align:bottom;
+    line-height:0;
     display: inline-block;
-    position: relative;
-
     width: 21px;
-    height: 18px;
+    height: 19px;
     background-image: url(../img/umbrella.png);
     background-position: -21px -524px;
     margin-right: 14px;
 }
-.menu__specifications--search::after {
+.menu__specifications--search::before {
     content:'';
     display: inline-block;
     width: 18px;
@@ -128,23 +125,30 @@ html {
     background-image: url(../img/umbrella.png);
     background-position: -23px -468px;
     position: absolute;
+    vertical-align:bottom;
     left:8px;
     
 }
 
 /* header  */
 
-/* products */
+                                        /* products */
 .main {
+    /* margin-top: 32px; */
     display: flex;   
     background-color: #f0f2f5;
-     align-items: stretch; 
+    /* justify-content: flex-start;  */
+    /* align-items: stretch;  */
+    padding: 24px 4px;
+    width: 330px;
    
 }
 
 .products {
-
-    padding: 16px 8px;
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin:4px;
     background-color:#fff;
    
   
@@ -152,122 +156,131 @@ html {
 .products__img {
     overflow: hidden; 
     height: 125px; 
-    width: 135px; 
+    width: 135px;  
     
+}
+
+.products-wrapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    padding: 8px;
+    height: 300px;
 }
 .products__title {
-    
+  
+   height: 18px;
+   flex-grow:1;
     font-size: 18px;
+    font-weight: 400;
     color:#010101;
     text-align: center;   
-    padding-bottom: 16px;
+    
 }
 .products__category { 
-   
-    padding: 2px 16px;
-
+    height: 24px;
+    flex-grow: 3;
     list-style-type:none;
     font-size: 14px;
     color:#666769;
 }
 .products__price {
+    height: 24px;
+    flex-grow:1;
     list-style-type:none;
     font-size: 24px;
     color:#a0d468;
     
-    padding:16px;
+   
  
 }
-
-
 .products__btn{
-    height: auto;
     font-size: 14px;
     border-radius: 0 0  5px 5px; 
-    display: flex;
-    align-self: auto;
-    align-content: flex-end;
     padding: 8px; 
     text-decoration: none; /* Убираем подчёркивание */
     color: #fff; /* Цвет текста */
-    background-color: #aab2bd;
-    
-   
-    
+    background-color: #aab2bd;   
+    text-align: center;
 }
 
 .products__btn--buy::before {
-content:'';
-display: inline-block;
-width: 21px;
-height: 19px;
-background-image: url(../img/umbrella.png);
-background-position: -35px -928px;
-margin-right: 8px;
+    vertical-align:top;
+    content:'';
+    display: inline-block;
+    width: 21px;
+    height: 19px;
+    background-image: url(../img/umbrella.png);
+    background-position: -35px -928px;
+    margin-right: 8px;
+    
 
 }
-/* products */
+                                        /* products */
 
 /* product-news */
 
 .product-news {
-    margin-top: 100px;
-   
     padding: 16px;
+    background-color: #f0f2f5;
+}
+.wrapp-news {
+    /* padding: 24px 16px; */
+    width: 300px;    
     background-color: #fff;
-    width: 300px;
-    height: auto;
-    
-        
-
+    border-radius: 0 0  5px 5px; 
+    box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06); 
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
 }
 .wrapp-author {
-    padding: 16px;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    bottom: 28px;
+
+ 
 }
 .product-news__author {
     border-radius: 40px;
-   
+     
 }
 
 .product-news__icons {
-    
-    display: flex;
-    font-size:14px;
-    margin: 0;
-    padding: 0; 
-   
-    
-   
-    
+    font-size:14px;  
 }
 .product-news__info--time::before{
-    
-    /* position: relative;
-    top:4px; */
     content:'';
     display: inline-block;
     width: 21px;
     height: 19px;
     background-image: url(../img/umbrella.png);
     background-position: -200px -1054px;  
+
 }
-.product-news__info--msg {
-    
-    /* position: relative;
-    bottom: 1px; */
-    /* padding-left: 18px; */
+.product-news__info--msg::before {
     content:'';
     display: inline-block;
     width: 21px;
     height: 19px;
     background-image: url(../img/umbrella.png);
     background-position: -263px -1053px;   
+    
+}
+.text {
+    /* height: 80px; */
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    /* align-content: center; */
+    align-items: center;
 }
 .product-news__title {
-    display: flex;
-    justify-content: center;
+    flex-grow: 2;
     font-size: 18px;
     font-weight: 700;
     color:#434a54;
@@ -275,7 +288,7 @@ margin-right: 8px;
 }
 
 .product-news__info {
-    text-align: left;
+    /* flex-grow: 1; */
     font-size: 14px;
     color:#aab2bd;
 }
