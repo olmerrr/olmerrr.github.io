@@ -17,7 +17,6 @@ html {
   .wrapper {
       width: 330px;
       background-color: #f0f2f5;
-      height: auto;
   }
 
 
@@ -97,7 +96,7 @@ html {
     box-shadow: inset 0 1px 0 0 rgba(236, 236, 236, 0.5); 
 }
 
-.menu__status-btn--buy { 
+.menu--status { 
     font-size: 18px;
     display: block;
     padding: 16px; 
@@ -106,7 +105,7 @@ html {
     background-color: #a0d468;
    
 }
-.menu__status-btn--buy::before {
+.menu--status::before {
     content:'';
     vertical-align:bottom;
     line-height:0;
@@ -126,20 +125,16 @@ html {
     background-position: -23px -468px;
     position: absolute;
     vertical-align:bottom;
-    left:8px;
-    
+    left:8px;   
 }
 
 /* header  */
 
-                                        /* products */
+ /* main */
 .main {
-    /* margin-top: 32px; */
     display: flex;   
     background-color: #f0f2f5;
-    /* justify-content: flex-start;  */
-    /* align-items: stretch;  */
-    padding: 24px 4px;
+    padding: 48px 4px ;
     width: 330px;
    
 }
@@ -196,7 +191,7 @@ html {
    
  
 }
-.products__btn{
+.products__btn {
     font-size: 14px;
     border-radius: 0 0  5px 5px; 
     padding: 8px; 
@@ -215,19 +210,16 @@ html {
     background-image: url(../img/umbrella.png);
     background-position: -35px -928px;
     margin-right: 8px;
-    
-
 }
-                                        /* products */
+ /* main*/
 
-/* product-news */
+/* article */
 
 .product-news {
     padding: 16px;
     background-color: #f0f2f5;
 }
 .wrapp-news {
-    /* padding: 24px 16px; */
     width: 300px;    
     background-color: #fff;
     border-radius: 0 0  5px 5px; 
@@ -241,56 +233,47 @@ html {
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
-    bottom: 28px;
-
- 
+    bottom: 34px;
 }
 .product-news__author {
-    border-radius: 40px;
-     
+    border-radius: 40px;   
 }
 
 .product-news__icons {
     font-size:14px;  
+    color:#aab2bd;
 }
-.product-news__info--time::before{
+.product-news__icons--time::before{
     content:'';
     display: inline-block;
     width: 21px;
     height: 19px;
     background-image: url(../img/umbrella.png);
     background-position: -200px -1054px;  
-
 }
-.product-news__info--msg::before {
+.product-news__icons--msg::before {
     content:'';
     display: inline-block;
     width: 21px;
     height: 19px;
     background-image: url(../img/umbrella.png);
-    background-position: -263px -1053px;   
-    
+    background-position: -263px -1053px;     
 }
-.text {
-    /* height: 80px; */
+.product-news__author-content{
     display: flex;
     flex-direction:column;
     justify-content: space-around;
-    /* align-content: center; */
     align-items: center;
 }
-.product-news__title {
+.product-news__title-content {
     flex-grow: 2;
     font-size: 18px;
     font-weight: 700;
     color:#434a54;
-
 }
 
-.product-news__info {
-    /* flex-grow: 1; */
+.product-news__text-content {
     font-size: 14px;
     color:#aab2bd;
 }
-
-/* product-news */
+/* article */
