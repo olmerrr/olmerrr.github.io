@@ -96,7 +96,7 @@ html {
     box-shadow: inset 0 1px 0 0 rgba(236, 236, 236, 0.5); 
 }
 
-.menu--status { 
+.menu__status{ 
     font-size: 18px;
     display: block;
     padding: 16px; 
@@ -105,7 +105,7 @@ html {
     background-color: #a0d468;
    
 }
-.menu--status::before {
+.menu__status--empty::before {
     content:'';
     vertical-align:bottom;
     line-height:0;
@@ -217,7 +217,7 @@ html {
 
 .product-news {
     padding: 16px;
-    background-color: #f0f2f5;
+   
 }
 .wrapp-news {
     width: 300px;    
@@ -228,22 +228,24 @@ html {
     padding-right: 16px;
     padding-bottom: 16px;
 }
-.wrapp-author {
+.product-news__author {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
     bottom: 34px;
 }
-.product-news__author {
+.product-news__img {
     border-radius: 40px;   
 }
 
 .product-news__icons {
-    font-size:14px;  
+   
+    font-size:12px;
     color:#aab2bd;
 }
 .product-news__icons--time::before{
+   
     content:'';
     display: inline-block;
     width: 21px;
@@ -252,6 +254,7 @@ html {
     background-position: -200px -1054px;  
 }
 .product-news__icons--msg::before {
+  
     content:'';
     display: inline-block;
     width: 21px;
