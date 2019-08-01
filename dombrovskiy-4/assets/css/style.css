@@ -1,4 +1,3 @@
-
 html {  
     box-sizing: border-box; 
    }
@@ -220,29 +219,36 @@ html {
    
 }
 .wrapp-news {
-    width: 300px;    
+    display: flex;
+    flex-direction: column;
+    height:150px;
+    width: 300px;  
+    justify-content: space-around;
     background-color: #fff;
     border-radius: 0 0  5px 5px; 
     box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06); 
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
+    padding-left: 16px; 
+     padding-right: 16px; 
+     padding-bottom: 16px;
 }
 .product-news__author {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
-    bottom: 34px;
-}
+    align-self: flex-end;
+   
+   /* position: relative;  */
+    /* bottom:40px;  */
+    flex-grow:1;
+} 
 .product-news__img {
-    border-radius: 40px;   
+    border-radius: 40px;  
+    /* align-self: center; */
+     flex-basis: 80px;
+  
 }
 
 .product-news__icons {
-   
     font-size:12px;
     color:#aab2bd;
+    /* align-self: flex-end; */
 }
 .product-news__icons--time::before{
    
@@ -262,21 +268,20 @@ html {
     background-image: url(../img/umbrella.png);
     background-position: -263px -1053px;     
 }
-.product-news__author-content{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
-}
 .product-news__title-content {
-    flex-grow: 2;
     font-size: 18px;
     font-weight: 700;
     color:#434a54;
+    align-self: center;
+    flex-grow:3;
+    
 }
 
 .product-news__text-content {
     font-size: 14px;
     color:#aab2bd;
+    flex-grow:1;
+    
+
 }
 /* article */
