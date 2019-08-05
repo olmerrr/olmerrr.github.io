@@ -14,7 +14,7 @@ html {
     width: 100%;
 }
   .wrapper {
-      width: 330px;
+      width: 325px;
       background-color: #f0f2f5;
   }
 
@@ -133,7 +133,8 @@ html {
 .main {
     display: flex;   
     flex-wrap:wrap;
-    
+    margin-top: 18px;
+  
 }
 
 .products {
@@ -147,6 +148,8 @@ html {
     display:flex;
     flex-direction: column;
     padding: 8px;
+    margin-right: 2px;
+    margin-left: 2px;
     
 
 }
@@ -160,7 +163,7 @@ html {
 
 
 .products__title {
-   flex-grow:2;
+    flex-grow:2;
     font-size: 18px;
     font-weight: 400;
     color:#010101;
@@ -172,12 +175,13 @@ html {
     font-size: 14px;
     color:#666769;
     flex-grow: 2;
+    align-self: center;
     
 }
 .products__category {
     height: 20px;
     width: 87px;
-
+    
 }
 
 .products__container-price {
@@ -185,7 +189,7 @@ html {
     list-style-type:none;
     font-size: 24px;
     color:#a0d468;
-
+    align-self: center;
 }
 .products__btn {
     display: block;
@@ -218,10 +222,10 @@ html {
     align-content:flex-end;
     align-items: stretch;
     
-    border-radius: 0 0  5px 5px; 
+    border-radius:5px; 
     box-shadow: 0px 2px 0px 0px rgba(1, 1, 1, 0.06); 
     background-color: #fff;
-    height: 200px;
+    height: 170px;
     padding-left:18px;
     padding-right: 18px;
     padding-bottom: 18px;  
@@ -243,7 +247,7 @@ html {
 
 .product-news__icons {
     position: relative; 
-    bottom:16px;
+    bottom:10px;
     display:inline-block;
     font-size:12px;
     color:#aab2bd;
