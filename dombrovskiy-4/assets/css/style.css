@@ -133,17 +133,17 @@ html {
 .main {
     display: flex;   
     flex-wrap:wrap;
-    margin-top: 18px;
+    margin-top: 8px;
   
 }
 
 .products {
     background-color:#fff;
     margin: 48px 4px;
-    
+    border-radius:5px 5px  0 0; 
 }
 .products__container {
-    height: 310px;
+    height: 300px;
     width: 150px;
     display:flex;
     flex-direction: column;
@@ -185,7 +185,7 @@ html {
 }
 
 .products__container-price {
-    flex-grow:0;
+    flex-grow:1;
     list-style-type:none;
     font-size: 24px;
     color:#a0d468;
@@ -255,7 +255,8 @@ html {
 }
 
 .product-news__icons--time::before{
-   
+    position: relative;
+    top:3px;
     content:'';
     display: inline-block;
     width: 21px;
@@ -264,7 +265,8 @@ html {
     background-position: -200px -1054px;  
 }
 .product-news__icons--msg::before {
-  
+    position: relative;
+    top:3px;
     content:'';
     display: inline-block;
     width: 21px;
