@@ -38,26 +38,32 @@
                 </nav>                 
         </header> 
                
-        <main class = "main">        
+        <main class = "main">   
+                        
                 <section class="slide-bar">
                        
-                  <img src="assets/img/banner-1.jpg" alt="slide-bar" class="slide-bar__picture"/>       
+                          <img src="assets/img/banner-1.jpg" alt="slide-bar" class="slide-bar__picture">
                        
-                  <div class="slide-bar__info-container">
-                         
-                    <h3 class="slider-bar__title">Успей 
-                         на распро-
-                         дажу!</h3>    
-                    <a href="#" class="slide-bar__btn">Подробнее</a> 
-                    <div class="slide-bar__nav-btn">
-                            <button class="slide-bar__btn-one"></button>
-                            <button class="slide-bar__btn-two"></button>
-                            <button class="slide-bar__btn-three"></button>
-                    </div>
-                  </div>
+                        <div class="slide-bar__info-container">
+                             
+                                <ul class="slide-bar__title-container">
+                                        <li class="slide-bar__title-items">Успей</li> 
+                                        <li class="slide-bar__title-items">на распро-</li>
+                                        <li class="slide-bar__title-items">дажу!</li>
+                                </ul>
+                             <a href="#" class="slide-bar__more-info">Подробнее</a> 
+                        </div>
                         
-                       
-                </section>    
+                        <button  type="button" class="slide-bar__btn-nav">
+							
+                                        <span class="btn-nav btn-nav--one"></span>
+                                        <span class="btn-nav btn-nav--two"></span>
+                                        <span class="btn-nav btn-nav--tree"></span>
+                            
+                              </button>
+                </section>
+              
+          
                         <section class="products">
                                <div class="products__container">    
                                          <img src="assets/img/umbrella1.jpg" alt="umbrella-banana" class = "products__img">
@@ -188,7 +194,23 @@
                                         
                                 
                                   </article> 
+                <div class="subscription">
+                      <div class="subscription__cover">
+                              
+                                <h2 class="subscription__title">Подпишитесь на рассылку</h2>
+                                <p class="subscription__content">Раз в месяц присылаем подборку лучших статей из нашего блога. Без спама
+                                </p>              
+                             <!-- </div> -->
+                                <form action="" class="subscription__form">
+                                   <input type="email" class="subscription__email" placeholder="Введите свою почту" required>
+                                   <button type="submit" class="subscription__btn">подписаться</button>
+                                </form>
+
+                        </div>
+                </section>
 </main> 
-    
+    <footer class="footer">
+            <p class="footer__text">Учебный проект <a  link href="https://jedicss.com/" class="footer__link">JediCSS</a></p>
+    </footer>
 </body>
 </html>
