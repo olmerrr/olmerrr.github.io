@@ -405,7 +405,7 @@ html {
 }
 
 .subscription__cover {
-    height: auto;
+    height: 240px;
     padding: 26px 16px;
     display: flex;
     flex-direction: column;
