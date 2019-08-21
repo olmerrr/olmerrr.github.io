@@ -10,57 +10,53 @@
     
 </head>
 <body>
-        <div class="wrapper">
-
-                <header class = "menu">
-                                <a href="#" class = "logo"> 
-                                        <img src="assets/img/logo.png" alt="pic-logo" class = "logo__img">
-                                         <h2 class = "logo__title"> Мэрри попинс</h2>
-                                </a>       
-                  <nav class="menu__navigation">
-                              <label class="menu__toggle"><input type="checkbox" class="menu__hamburger"></label>                 
-                                <ul class="navigation">    
-                                        <li><a href="#" class="menu__specifications">Каталог</a>
-                                <ul class="navigation">
-                                        <li><a href="#" class="menu__submenu">Механика</a></li>
-                                        <li><a href="#" class="menu__submenu">Автомат</a></li>
-                                        <li><a href="#" class="menu__submenu">Полуавтомат</a></li>
-                                </ul>
-                                </li>
-                                        <li><a href="#" class="menu__specifications">Новости</a></li>
-                                        <li><a href="#" class="menu__specifications">Доставка</a></li>
-                                        <li><a href="#" class="menu__specifications">Контакты</a></li>
-                                        <li><a href="#" class="menu__specifications menu__specifications--search">Что будем искать?</a></li>
-                                                    
-                                </ul>
-                              
-                                <a href="#" class="menu__status menu__status--empty">В корзине пусто</a>
+        
+        <header class = "page-header">
+         <div class="page-header__cover">
+                <a href="#" class = "page-header__logo">
+                        <img src="assets/img/logo.png" alt="image-logo" class = "page-header__logo-img">
+                        <h1 class = "page-header__logo-title"> Мэрри попинс</h1>
+                </a>     
+                <span class="page-header__main-nav"></span>
+         </div>
+                <nav class="main-nav">
+                  <ul class="site-list">    
+                        <li  class="site-list__item"><a href="#" class="site-list__item-link">Каталог</a>
+                          <ul class="site-list__submenu">
+                            <li class="site-list__item-submenu"><a href="#" class="site-list__item-link">Механика</a></li>
+                            <li class="site-list__item-submenu"><a href="#" class="site-list__item-link">Автомат</a></li>
+                            <li class="site-list__item-submenu"><a href="#" class="site-list__item-link">Полуавтомат</a></li>
+                          </ul>
+                        </li>
+                        <li class="site-list__item"><a href="#" class="site-list__item-link">Новости</a></li>
+                        <li class="site-list__item"><a href="#" class="site-list__item-link">Доставка</a></li>
+                        <li class="site-list__item"><a href="#" class="site-list__item-link">Контакты</a></li>
+                        <li class="site-list__item"><a href="#" class="site-list__item-link site-list__item-link--search">Что будем искать?</a></li>                           
+                  </ul>
+                 <div class="main-nav__status-menu"> 
+                        <a href="#" class="status-item">В корзине пусто</a>
+                </div>        
                 </nav>                 
+          
         </header> 
                
         <main class = "main">   
                         
                 <section class="slide-bar">
-                       
-                          <img src="assets/img/banner-1.jpg" alt="slide-bar" class="slide-bar__picture">
-                       
-                        <div class="slide-bar__info-container">
-                             
-                                <ul class="slide-bar__title-container">
-                                        <li class="slide-bar__title-items">Успей</li> 
-                                        <li class="slide-bar__title-items">на распро-</li>
-                                        <li class="slide-bar__title-items">дажу!</li>
-                                </ul>
-                             <a href="#" class="slide-bar__more-info">Подробнее</a> 
-                        </div>
-                        
-                        <button  type="button" class="slide-bar__btn-nav">
-							
-                                        <span class="btn-nav btn-nav--one"></span>
-                                        <span class="btn-nav btn-nav--two"></span>
-                                        <span class="btn-nav btn-nav--tree"></span>
-                            
-                        </button>
+                  <img src="assets/img/banner-1.jpg" alt="slide-bar" class="slide-bar__picture">      
+                  <div class="slide-bar__info-container">
+                     <ul class="slide-bar__title-container">
+                        <li class="slide-bar__title-items">Успей</li> 
+                        <li class="slide-bar__title-items">на распро-</li>
+                        <li class="slide-bar__title-items">дажу!</li>
+                    </ul>
+                    <a href="#" class="slide-bar__more-info">Подробнее</a> 
+                  </div>      
+                  <button  type="button" class="slide-bar__toggles ">				
+                    <span class="btn-nav btn-nav--one">1</span>
+                    <span class="btn-nav btn-nav--two">2</span>
+                    <span class="btn-nav btn-nav--tree">3</span>
+                  </button>
                 </section>
               
           
@@ -142,8 +138,6 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna.
                         </p>
-                        
-                
                 </article> 
                 <article class="product-news">
                         <div class="product-news__author">
@@ -175,11 +169,13 @@
                                 <div class="subscription__cover">
                                         <h2 class="subscription__title">Подпишитесь на рассылку</h2>
                                         <p class="subscription__content">Раз в месяц присылаем подборку лучших статей из нашего блога. Без спама
-                                        </p>              
-                                <form action="" class="subscription__form">
-                                        <input type="email" class="subscription__email" placeholder="Введите свою почту" required>
-                                        <button type="submit" class="subscription__btn">подписаться</button>
-                                </form>
+                                        </p>     
+                                  
+                                        <form action="">
+                                                <input type="email" class="subscription__email" placeholder="Введите свою почту" required>
+                                                <button type="submit" class="subscription__btn">подписаться</button>
+                                        </form>
+                                </div>
                         </div>
                 </section>
 </main> 
