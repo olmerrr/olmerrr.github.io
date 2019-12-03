@@ -122,6 +122,9 @@ header {
 #modal {
     display: none;
 }
+.slick-slide {
+    outline:none;
+}
 .slider {
     background-image: url(../img/slider-fon.jpg);
     background-repeat: no-repeat;
@@ -164,6 +167,7 @@ header {
     border: 1px solid #ffc222;
     border-right-width: 20px;
     position: relative;
+    outline: none;
 }
  .default-btn:after {
     font-family: 'icomoon';
@@ -181,11 +185,37 @@ header {
  }
  
  .slick-btn {
-     position: absolute;
-     top:70%;
+    position: absolute;
+    top:70%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border:1px solid #fff;
+    
+    color:#fff;
+    cursor: pointer;
+    outline: none;
+    background-color: #ffc222;
+    }
+.slick-btn.slick-disabled {
+    cursor: default;
+    background-color: transparent;
+}
+.slick-btn::before {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-family: 'icomoon';
 
- }
-
+   
+}
+.slick-prev::before {
+    content: "\f104";
+}
+.slick-next::before {
+        content: "\f105";
+}
  .slick-next {
     right: 0;
  }
@@ -194,3 +224,93 @@ header {
     left: 0;
 
  }
+
+ .about {
+     padding: 50px 0px 30px;
+     font-family: 'Roboto', sans-serif;
+ }
+ .about__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+ }
+
+ .about__title-box {
+    max-width: 520px;
+    padding-left: 140px;
+    position: relative;
+ }
+ .about__title-box::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #ffc222;
+    left: 0;
+    top:11px;
+
+ }
+ .about-title{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color:#212020;
+    margin-bottom: 10px;
+ }
+
+
+.about-text {
+    letter-spacing: 0.1px;
+}
+.about__btn a{
+    letter-spacing: 0.25px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color:#373636;
+    padding: 5px 38px;
+    border:3px solid #e6e6e6;
+
+}
+.about__items {
+    display: flex;
+    justify-content: space-between;
+}
+.about__item {
+max-width: 360px;
+text-align: center;
+padding: 30px 0 80px;   
+position: relative;
+min-height: 375px;
+
+}
+
+.about__item-title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color:#212020;
+    padding:24px 0;
+
+}
+
+.about__item-text {
+    letter-spacing: 0.1px;
+    line-height: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color:#5e5e5e;
+    padding: 0 30px 30px;
+
+ 
+}
+
+.about__item-btn {
+    position: absolute;
+    bottom: 40px;
+}
+.about__item-btn .default-btn {
+    color:#373636;
+}
