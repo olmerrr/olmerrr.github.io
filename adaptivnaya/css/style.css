@@ -738,11 +738,12 @@ header {
 .footer__map {
     padding-top: 10px;
     max-width: 630px;
+    width: 100%;
 }
-/* .footer__map iframe{
+.footer__map iframe{
     height: 250px;
     width: 100%;
-} */
+}
 
 .footer__copy {
     background-color: #303030;
@@ -779,4 +780,7 @@ header {
     font-weight: 700;
     transition: 1s;
 }
-
+.header__btn-menu {
+    display: none;
+    font-size: 28px;
+}
