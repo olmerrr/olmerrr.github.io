@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 body {
@@ -10,7 +12,7 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -72,14 +74,14 @@ a {
   justify-content: space-between;
 }
 .top__inner-img {
-  margin-left: 125 px;
+  margin-left: 125px;
 }
 .top__inner-form {
   max-width: 570px;
   width: 100%;
 }
 .top__inner-suptitle {
-  margin-top:80px;
+  margin-top:70px;
   margin-bottom: 25px;
   font-size: 14px;
   color:#fff;
@@ -98,7 +100,7 @@ a {
   line-height: 24px;
   font-weight: 400;
   color:#fff;
-  margin-bottom: 90px;
+  margin-bottom: 83px;
 }
 .top-form {
   background-color: #fff;
@@ -112,14 +114,14 @@ a {
   padding: 50px 50px 116px 50px;
 }
 .top-form__title {
-  width: 200px;
-  margin-bottom: 35px;
+  margin-bottom:37px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color:#303030;
   letter-spacing: 1px;
   line-height: 22px;
+  width: 195px;
 }
 .top-form input + input{
   margin-left: 30px;
@@ -130,11 +132,11 @@ a {
   padding-bottom:14px;
   border-bottom: 1px solid #c8dcba;
   outline:none;
-
+  width: 195px;
 }
 .top-form input::placeholder {
   font-size: 14px;
-  columns: #a8c48c;
+  color: #a8c48c;
   font-weight: 400; 
 }
 form {
@@ -153,6 +155,7 @@ form {
   color:#fff;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 .top-form button::after {
   content: "";
@@ -160,7 +163,46 @@ form {
   width: 31px;
   height: 9px;
   color: #595959;
-  position: absolute; 
+  position: absolute;
   right: 60px;
   top: 25px;
+}
+.advantages__inner {
+  display: flex;
+  justify-content: space-around;
+}
+.advantages__item {
+  width: 240px;
+  padding-left: 40px;
+  padding-top: 35px;
+  position: relative;
+}
+.advantages__item::before {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border:3px solid rgba(164, 197, 140 ,0.3);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+.advantages__item-number {
+  font-size: 18 px;
+  font-weight: 600;
+  color:#a4c58c;
+  line-height: 24px;
+  border-bottom: 5px solid #a4c58c;
+  display: inline-blockc;
+}
+.advantages__item-number span {
+  font-size: 30px;
+  
+}
+.advantages__item-text {
+  padding-top: 20px;
+  line-height: 24px;
+  font-size: 16px;
+  color:#000;
+
 }
