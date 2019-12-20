@@ -3,9 +3,14 @@
 *::before{
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 body{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 .container{
   max-width: 1200px;
@@ -345,5 +350,112 @@ body{
 .tabs__box .tab:nth-child(2) {
   padding-left: 25px;
 }
+/* .tabs__content-reviews  */
+.tabs__reviews {
+padding: 20px;
+background-color: #f6f9f3;
+max-width: 430px;
+position: absolute;
+bottom: 0;
+}
+.tabs__reviews-inner {
+  border:1px solid #c5dab5;
+  padding: 30px 45px;
+  
+  min-height: 116px;
+}
+.tabs__reviews-text {
+  color:#303030;
 
+}
+.tabs__reviews-link{
+font-size: 14px;
+font-weight: 600;
+color:#7eb152;
+position: absolute;
+bottom:10px;
+background-color: #f6f9f3;
+padding: 0 8px;
 
+}
+.list__link {
+  display: flex;
+  justify-content: flex-end;
+}
+.list__link a {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 900;
+  color:#fff;
+  text-transform: uppercase;
+  padding: 22px 100px 22px 120px;
+  position: relative;
+  background-color: #7eb252;
+  min-width: 500px;
+ 
+
+}
+.list__link a::after{
+  content: '';
+  background-image: url(../images/arrow-right.png);
+  width: 31px;
+  height: 9px;
+  position: absolute;
+  right: 100px;
+  top: 30px;
+}
+.popularity {
+  padding-top: 200px;
+}
+.popularity__wrapper{
+  background-image: url(../images/popularity-girl.jpg);
+  background-repeat: no-repeat;
+  max-width: 1720px;
+  min-height: 645px;
+  margin: 0 auto;
+}
+.popularity__inner{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.popularity__right{
+  width: 100%;
+  max-width: 500px;
+  padding-right: 26px;
+}
+.popularity__right-title {
+  font-weight: 700;
+  font-size: 40px;
+  color:#303030;
+  line-height: 50px;
+}
+.popularity__right-subtitle{
+  color:#303030;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  padding: 50px 0px;
+}
+.popularity__right-list  {
+  list-style: none;
+  color:#303030;
+}
+.popularity__right-list li{
+  line-height: 22px;
+  margin-bottom: 45px;
+  padding-left: 40px;
+  position: relative;
+}
+.popularity__right-list li::before{
+  content: '';
+ position: absolute;
+ left: 0;
+ width: 8px;
+ height: 13px;
+ background-image: url(../images/shevron.svg);
+ top: 50%;
+ transform:translateY(-50%);
+}
