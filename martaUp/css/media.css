@@ -1,0 +1,246 @@
+@media (max-width: 1620px){
+  .advantages{
+   background-size: 100px;
+  }
+}
+@media (max-width: 1210px){
+  .advantages{
+    background-image: none;
+  }
+  .specialised{
+    background-size: 60px;
+  }
+}
+@media (max-width: 1190px){
+  .advantages-box{
+    justify-content: space-around;
+  }
+  .advantages-box__imgages img{
+    width: 80%;
+  }
+  .advantages-box__imgages{
+    text-align: center;
+  }
+  .advantages-box--right .advantages-box__title{
+    padding: 30px 15px 20px;
+  }
+  .advantages-box--right .advantages-box__text{
+    padding-left: 20px;
+  }
+  .advantages-box--right .advantages-box__info{
+    padding-right: 30px;
+  }
+  .specialised{
+    background-image:none;
+  }
+  .header-slider__item-img{
+    margin: 10px 20px 0 0;
+  }
+  .header-slider__item-img img{
+    width: 80%;
+  }
+  .header-slider__item-info{
+    padding: 50px 0;
+  }
+  .header-slider{
+    padding-top: 25px;
+  }
+}
+@media (max-width: 1080px){
+  .advantages-box__info{
+    padding-top: 10px;
+  }
+  .advantages-box__imgages img{
+    width: 70%;
+    margin-top: 40px;
+  }
+  .reviews__items{
+    flex-wrap: wrap;
+  }
+  .reviews__item{
+    width: 48%;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 924px){
+  .header__top{
+    flex-wrap: wrap;
+  }
+  .header-btn{
+    width: 100%;
+    text-align: right;
+  }
+  .login{
+    margin-right: 24px;
+  }
+  .sign-up{
+    padding: 6px 26px;
+  }
+}
+@media (max-width: 858px){
+  .advantages-box__info{
+    max-width: 100%;
+  }
+}
+@media (max-width: 900px){
+  .header-slider__item-img{
+    display: none;
+  }
+}
+@media (max-width: 775px){
+  .specialised section{
+    padding: 20px 0 40px;
+  }
+  .specialised__title{
+    margin-bottom: 30px;
+  }
+  .specialised__items{
+    flex-wrap: wrap;
+  }
+  .specialised__item{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .advantages-box{
+    flex-wrap: wrap;
+  }
+  .advantages-box--right .advantages-box__imgages{
+    order: 1;
+  }
+  .advantages {
+    padding-top: 20px;
+  }
+  .advantages-box__title{
+    padding-top: 10px;
+  }
+  .advantages-box{
+    padding-bottom: 20px;
+  }
+  .advantages-box__imgages{
+    width: 100%;
+  }
+}
+@media (max-width: 686px){
+  .reviews__items{
+    display: block;
+  }
+  .reviews__item{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .reviews{
+    padding: 38px 0;
+  }
+  .reviews__title {
+    margin: 0 auto 24px;
+  }
+}
+@media (max-width: 620px){
+  .footer__inner{
+    display: block;
+    text-align: center;
+    padding: 20px 10px 17px;
+  }
+  .footer__link{
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 570px){
+  .advantages-box__title{
+    line-height: 40px;
+    font-size: 30px;
+    padding: 38px 0 15px 0;
+  }
+ .advantages-box__text{
+   padding-left: 0;
+ }
+ .advantages-box--right .advantages-box__title{
+    line-height: 40px;
+    font-size: 30px;
+    padding: 38px 0 15px 0;
+ }
+ .advantages-box--right .advantages-box__text{
+    padding-left: 0;
+ }
+  .header{
+    min-height: 580px;
+  }
+  .header-slider__description{
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .header-slider__title{
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .header-slider__item-info{
+    padding: 10px 30px 10px 0;
+  }
+  .menu__list{
+    display: none;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    background-color: #1b4ea9;
+    z-index: 5;
+  }
+  .menu__list li + li{
+    padding-left: 0;
+  }
+  .menu__list a {
+   display: block;
+   padding: 10px 0;
+  }
+  .menu__btn{
+    width: 30px;
+    height: 20px;
+    position: relative;
+  }
+  .menu__btn span{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    top: 9px;
+    position: absolute;
+  }
+  .menu__btn::after,
+  .menu__btn::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+  }
+  .menu__btn::after{
+    top: 0;
+  }
+  .menu__btn::before{
+    bottom: 0;
+  }
+  .header-slider__item-info{
+    padding: 10px 0;
+  }
+  .specialised__items{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .specialised__item{
+    width: 100%;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .specialised {
+    padding: 55px 0 0;
+  }
+}
+@media (min-width: 571px){
+  .menu__list{
+    display: flex!important;
+  }
+}
