@@ -1,0 +1,355 @@
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+$topColor: #e53935;
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.header {
+  max-height: 785px;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 700;
+  background: #141115;
+}
+.header__wrapper{
+  
+}
+.header__inner{
+  position: relative;
+}
+.menu{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  background: transparent;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  a{
+    color:inherit;
+    &:hover{
+      color:$topColor;
+    }
+  }
+  
+}
+.menu__list{
+  display: flex;
+  li{
+    margin-left:30px;
+  }
+ 
+}
+.menu__shoping{
+  display: flex;
+  align-items: center;
+}
+.login{
+  background-image: url('../img/login.png');
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 24px;
+  margin-right: 20px;
+  &:hover{
+    background-image: url(../img/login-hover.png);
+  }
+}
+.basket{
+  background-image: url('../img/basket.png');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  &:hover{
+    background-image: url(../img/basket-hover.png);
+  }
+}
+.header__slider {
+  background-color: #141115;
+  z-index: 0;
+}
+.header__slider__box {
+  position: relative;
+}
+.slider__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  right: 31%;
+  top: 22%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #fff;
+}
+.slider__info-title,
+.slider__info-subtitle,
+.hamburger__slider-title {
+  font-weight: 400;
+  font-size: 22px;
+  color:#82e1b1;
+}
+.slider__info-price {
+  font-size: 56px;
+  line-height: 84px;
+  color: $topColor;
+}
+ .slick-dots{
+   display: flex;
+   justify-content: center;
+ }
+ .header__slider .slick-list {
+  margin: 0 auto;
+}
+
+.header__slider .slick-dots {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header__slider .slick-dots li {
+  margin: 0 7px;
+}
+
+.header__slider .slick-dots li.slick-active button {
+  width: 34px;
+  background: $topColor;
+  border-radius: 50px;
+}
+
+.header__slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.category{
+  background: $topColor;
+}
+.category__wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  color:#fff;
+  text-align: center;
+  position: relative;
+    .item-icon{
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 15px;
+    }
+    a {
+      color:inherit;
+    }
+  .item-1{
+    background-image: url(../img/pizza-slice.svg);
+    &:hover{
+      background-image: url(../img/pizza-slice-hover.svg);
+    }
+  }
+ 
+  .item-2{
+    background-image: url(../img/rice.svg);
+    
+      &:hover{
+        background-image: url(../img/rice-hover.svg);
+      }
+  }
+  .item-3{
+    background-image: url(../img/kebab.svg);
+      &:hover{
+        background-image: url(../img/kebab-hover.svg);
+      }
+  }
+  .item-4{
+    background-image: url(../img/burger.svg);
+      &:hover{
+        background-image: url(../img/burger-hover.svg);
+      }
+  }
+  
+  .item-5{
+    background-image: url(../img/fried-potatoes.svg);
+      &:hover{
+        background-image: url(../img/fried-potatoes-hover.svg);
+      }
+  }
+  .item-6{
+    background-image: url(../img/chinese-food.svg);
+      &:hover{
+        background-image: url(../img/chinese-food-hover.svg);
+      }
+  }
+  .item-7{
+    background-image: url(../img/donut.svg);
+      &:hover{
+        background-image: url(../img/donut-hover.svg);
+      }
+  }
+
+  .item-8{
+    background-image: url(../img/cola.svg);
+      &:hover{
+        background-image: url(../img/cola-hover.svg);
+      }
+  }
+}
+.category__wrapper::after{
+  content: "";
+  left: 50%;
+  bottom: -26%;
+  position: absolute;
+  border: 15px solid transparent;
+  border-top: 15px solid #e53935;
+  transform: translateX(-50%);
+  }
+
+  .hamburger__menu {
+    background: #f2f2f2;
+    padding: 40px 0;
+  }
+  
+
+  .hamburger__slider-item {
+    margin: 0  15px;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hamburger__slider-inner {
+    height: 340px;
+   
+  }
+  .hamburger__slider-img {
+    text-align: center;
+    max-width: 277px;
+    max-width: 221px;
+    margin: 0 auto 15px
+  }
+  .hamburger__slider-title {
+    margin-bottom: 15px;
+  }
+  .hamburger__slider-price {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color:$topColor;
+    font-weight: 500;
+  }
+  .hamburger__slider-btn a{
+    padding: 6px 48px;
+    background: $topColor;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 5px;
+      &:hover{
+        background-color: #fff;
+        color: #e53935;
+        border: 2px dashed #e53935;
+      }
+  }
+  .hamburger__slider .slick-list {
+    margin: 0 -30px;
+}
+
+.hamburger__slider .slick-slide {
+    margin: 0 30px;
+}
+
+.menu-box {
+    display: flex;
+}
+
+.hamburger__slider .slick-prev {
+    background: url(../img/arrow-point.svg) no-repeat center center;
+    background-size: 20px 33px;
+}
+
+.hamburger__slider .slick-prev:hover {
+    background: url(../img/arrow-point-hover.svg) no-repeat center center;
+    background-size: 20px 33px;
+}
+
+.hamburger__slider .slick-next {
+    background: url(../img/arrow-point.svg) no-repeat center center;
+    background-size: 20px 33px;
+    transform: scale(-1, 1);
+}
+
+.hamburger__slider .slick-next:hover {
+    background: url(../img/arrow-point-hover.svg) no-repeat center center;
+    background-size: 20px 33px;
+    transform: scale(-1, 1);
+}
+
+.hamburger__slider .slick-arrow {
+    cursor: pointer;
+    font-size: 0;
+    width: 55px;
+    height: 55px;
+    background-color: #e53935;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    border: 2px dashed #e53935;
+}
+
+.hamburger__slider .slick-arrow:hover {
+    background-color: #fff;
+}
+
+.hamburger__slider {
+    position: relative;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 45%;
+    left: -22px;
+    z-index: 15;
+}
+
+.slick-next {
+    position: absolute;
+    top: 45%;
+    right: -20px;
+    z-index: 15;
+}
