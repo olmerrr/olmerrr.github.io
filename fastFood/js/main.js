@@ -30,13 +30,12 @@ $(function () {
   //   autoplay: true,
 
   // });
-
-
-  $('.hamburger').on('click', function () {
-    $('.header__inner').slideToggle();
+ $('.hamburger').on('click', function () {
+    $('.menu').slideToggle();
   });
 
 });
+
 
 $(function () {
 
