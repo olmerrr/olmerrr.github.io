@@ -7,6 +7,7 @@
   <title>Marta Up</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -32,8 +33,8 @@
           </ul>
         </nav>
         <div class="header-btn">
-          <a href="#" class="login">Login</a>
-          <a href="#" class="sign-up">Sign Up</a>
+          <a href="#" class="login" data-fancybox data-src="#modal" href="javascript:;">Login</a>
+          <a href="#" class="sign-up" data-fancybox data-src="#modal" href="javascript:;">Sign Up</a>
         </div>
       </div>
       <div class="header-slider">
@@ -47,7 +48,7 @@
               <div class="header-slider__description">
                 For startups, For businesses & For you
               </div>
-              <a href="#" class="header-slider__btn">Request a quote</a>
+              <a href="#" class="header-slider__btn" data-fancybox data-src="#modal" href="javascript:;">Request a quote</a>
             </div>
             <div class="header-slider__item-img">
               <img src="images/slider.svg" alt="">
@@ -64,7 +65,7 @@
               <div class="header-slider__description">
                 For startups, For businesses & For you
               </div>
-              <a href="#" class="header-slider__btn">Request a quote</a>
+                <a href="#" class="header-slider__btn" data-fancybox data-src="#modal" href="javascript:;">Request a quote</a>
             </div>
             <div class="header-slider__item-img">
               <img src="images/slider.svg" alt="">
@@ -81,7 +82,7 @@
               <div class="header-slider__description">
                 For startups, For businesses & For you
               </div>
-              <a href="#" class="header-slider__btn">Request a quote</a>
+                <a href="#" class="header-slider__btn" data-fancybox data-src="#modal" href="javascript:;">Request a quote</a>
             </div>
             <div class="header-slider__item-img">
               <img src="images/slider.svg" alt="">
@@ -98,7 +99,7 @@
               <div class="header-slider__description">
                 For startups, For businesses & For you
               </div>
-              <a href="#" class="header-slider__btn">Request a quote</a>
+                <a href="#" class="header-slider__btn" data-fancybox data-src="#modal" href="javascript:;">Request a quote</a>
             </div>
             <div class="header-slider__item-img">
               <img src="images/slider.svg" alt="">
@@ -115,7 +116,7 @@
               <div class="header-slider__description">
                 For startups, For businesses & For you
               </div>
-              <a href="#" class="header-slider__btn">Request a quote</a>
+                <a href="#" class="header-slider__btn" data-fancybox data-src="#modal" href="javascript:;">Request a quote</a>
             </div>
             <div class="header-slider__item-img">
               <img src="images/slider.svg" alt="">
@@ -294,6 +295,13 @@
   <footer>
     <div class="container">
       <div class="footer__inner">
+        <div id="modal">
+          <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" placeholder="Ваш телефон" pattern="^[ 0-9]+$"required>
+            <input type="submit" value="Отправить">
+          </form>
+        </div>
         <div class="footer__link">
           <a href="#">About MartaUp</a>
           <a href="#">Help</a>
@@ -306,6 +314,7 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>

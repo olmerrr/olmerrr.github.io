@@ -239,8 +239,10 @@
     padding: 55px 0 0;
   }
 }
-@media (min-width: 571px){
+@media (min-width: 600px){
   .menu__list{
     display: flex!important;
   }
 }
+
+
