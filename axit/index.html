@@ -111,26 +111,43 @@
   <section class="advantages">
     <div class="container">
       <div class="advantages__inner">
-        <div class="advantages__tabs">
-          <div class="tab tab-1">TAB 1</div>
-          <div class="tab tab-2">TAB 2</div>
-          <div class="tab tab-3">TAB 3</div>
-        </div>
-
-        <div class="advantages__tabs-info">
-          <div class="tabs-info__title">
-            Tabs with soft transitioning effect.
-          </div>
-          <div class="tabs-info__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-              justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-              penatibus et magnis dis parturient montes.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-              bibendum laoreet.</p>
-          </div>
-          <div class="info__btn">
-            <a href="#">Download</a>
+        <div class="tabs-container">
+          <ul class="tabs">
+            <li class="active">
+              <a href="#">TAB 1</a>
+            </li>
+            <li>
+              <a href="#">TAB 2</a>
+            </li>
+            <li>
+              <a href="#">TAB 3</a>
+            </li>
+          </ul>
+          <div class="tabs-content">
+            <div class="tabs-panel active" data-index="0">
+              <div class="tabs-info__title">Every entrepreneur worth their salt knows how important content is.</div>
+              <p>
+                If you’re not on the first two pages of a Google search, your company doesn’t exist. You’re dead in the water. Content is critical to getting favorably crawled and ranked by Google, so most entrepreneurs will load up their website with as much content as they can, most of it generic and keyword-stuffed.</p>
+                <p>Generic content can kill your company, and shady practices like keyword-stuffing are highly frowned upon by Google.Content might be king, but not all copy deserves the royal treatment, and if you’re peddling the same tired, unoriginal and sloppily written stuff as everyone else, you’re doing yourself a disservice. </p>
+            </div>
+            <div class="tabs-panel" data-index="1">
+              <div class="tabs-info__title">Don’t fall into this trap.</div>
+              <p>
+                You should definitely be using keywords and key phrases in your copy. Part of an effective content strategy is identifying what you can reasonably be found for, and infusing your content with these words, so Google can find and reward you. Employ a professional writer who can blend in these keywords seamlessly and your reader won’t be any more the wiser. You’ll get an SEO boost and be producing solid content. Win-win.
+              </p>
+              <p>
+                You can find them dotted all over every corner of the internet, and it’s tempting to take them up on the offer. At .005 cents per word, how can you go wrong?
+                You’ll get an SEO boost and be producing solid content. Win-win.
+              </p>
+            </div>
+            <div class="tabs-panel" data-index="2">
+              <div class="tabs-info__title">Avoid: Keyword-Stuffing</div>
+              <p>Keyword-stuffing is the practice of cramming as many keywords or key phrases into your content, regardless of the context. Dead giveaways are words that are in a different tense or in plural form when they should be singular. Readers pick up on keyword-stuffing right away, and it looks highly unprofessional.</p>
+              <p>Successful content strategy means keeping it consistent. Regular blog posts, articles, interviews or updates are absolutely imperative to keep you relevant in the Google search engine results. Keeping a content schedule makes you look good to your customers and investors too. One of the biggest mistakes I see entrepreneurs make is to publish a ton of blog posts all at once and then go totally radio silent.</p>
+            </div>
+            <div class="info__btn">
+              <a href="#">Download</a>
+            </div>
           </div>
         </div>
 
@@ -138,7 +155,8 @@
           <img src="img/content-image_right.png" alt="">
         </div>
       </div>
-    </div>
+        </div>
+          
   </section>
 
   <section class="feature-1" id="features">
@@ -469,6 +487,7 @@
     </div>
   </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/tabs.js"></script>
 <script src="js/main.js"></script>
 <div id="toTop"></div>
 </body>
