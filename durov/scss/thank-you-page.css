@@ -1,0 +1,134 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: transparent;
+  color: #000;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.linear-gradient {
+  background: linear-gradient(360deg, #12FFF7 -19.63%, #28E17E 67.29%);
+}
+
+.btn {
+  text-align: center;
+  max-width: 425px;
+  border-radius: 15px;
+  padding: 25px 30px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  font-weight: 900;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: .8;
+  transition: all 0.5s;
+}
+
+.thanks-container {
+  text-align: center;
+  margin: 8% auto 0;
+  max-width: 750px;
+  background: #BCE1F6;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1), 0px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+
+.thanks-container__inner {
+  padding: 50px 32px;
+}
+
+.thanks-container__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 10px;
+}
+
+.thanks-container__sub-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 50px;
+}
+
+.thanks-content {
+  text-align: left;
+  margin: 0 auto 60px;
+  max-width: 470px;
+  line-height: 17px;
+}
+.thanks-content li {
+  padding-top: 20px;
+}
+
+.thanks-content__btn {
+  margin: 0 auto;
+  width: 291px;
+  height: 56px;
+  padding: 20px 50px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+.thanks-content__btn:hover {
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+@media (max-width: 550px) {
+  .thanks-content {
+    margin: 0 auto 35px;
+  }
+
+  .thanks-content__btn {
+    width: 100%;
+    padding: 20px 32px;
+  }
+}
+@media (max-width: 360px) {
+  .thanks-container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 344px;
+    max-height: 800px;
+  }
+
+  .thanks-container__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .thanks-container__sub-title {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 30px;
+    padding: 0 50px;
+  }
+
+  .thanks-content {
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 30px;
+  }
+}
