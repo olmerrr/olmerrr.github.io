@@ -44,7 +44,8 @@ html {
   box-sizing: inherit;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -103,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(../images/bg-slider.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   color: #fff;
   text-align: center;
   outline: none;
@@ -112,12 +113,10 @@ h1, h2, h3, h4, h5, h6 {
 .top-slider {
   background: rgba(33, 33, 33, 0.5);
 }
-
 .top-slider__item {
   position: relative;
   min-height: 195px;
 }
-
 .top-slider__title {
   font-family: 'Roboto-Condensed-Regular';
   font-weight: 400;
@@ -139,6 +138,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #4A4A4A;
   width: 60px;
   margin: 0 auto;
+}
+
+.top-slider__text {
+  display: none;
 }
 
 .top-slider__btn {
@@ -207,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   .top-slider .slick-dots {
     bottom: 50px;
   }
-  .top-slider button {
+  .top-slider .slick-next, .top-slider .slick-prev {
     padding: 0;
   }
   .top-slider .slick-arrow {
@@ -236,15 +239,63 @@ h1, h2, h3, h4, h5, h6 {
   .header__inner {
     min-height: 100px;
   }
+
+  .top-slider__item {
+    min-height: 465px;
+  }
+  .top-slider__title {
+    padding: 87px 0 0;
+  }
+  .top-slider__title::after {
+    display: none;
+  }
+  .top-slider__text {
+    font-size: 18px;
+    font-family: 'Roboto-Condensed-Regular';
+    font-weight: 400;
+    max-width: 590px;
+    margin: 0 auto 32px;
+    display: block;
+  }
 }
 @media (min-width: 1024px) {
   .container {
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  .top-slider__title {
+    padding: 100px 0 0;
+    font-size: 84px;
+    line-height: 84px;
+    letter-spacing: 2px;
+  }
+  .top-slider__item {
+    min-height: 620px;
+  }
+  .top-slider__text {
+    margin-bottom: 45px;
+  }
+  .top-slider .slick-dots {
+    bottom: 100px;
+  }
 }
 @media (min-width: 1440px) {
   .container {
     max-width: 1320px;
+  }
+
+  .top-slider__title {
+    padding: 108px 0 0;
+    font-size: 96px;
+    line-height: 96px;
+  }
+  .top-slider__item {
+    min-height: 668px;
+  }
+  .top-slider__text {
+    max-width: 889px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }

@@ -9,7 +9,8 @@ html {
 ::after{
   box-sizing: inherit;
 }
-ul,li{
+ul,
+li{
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -63,19 +64,19 @@ h1,h2,h3,h4,h5,h6{
     background-image: url(../images/bg-slider.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center center;
     color:#fff;
     text-align: center;
     outline: none;
   }
   .top-slider {
     background: rgba(33, 33, 33, 0.5);
-  }
-  .top-slider__item {
+  
+  &__item {
     position: relative;
     min-height: 195px;
   }
-  .top-slider__title {
+  &__title {
     font-family: 'Roboto-Condensed-Regular';
     font-weight: 400;
     font-size: 28px;
@@ -96,6 +97,10 @@ h1,h2,h3,h4,h5,h6{
         width: 60px;
         margin: 0 auto;
       }
+  }
+}
+  .top-slider__text{
+    display: none;
   }
   .top-slider__btn{
     display: none;
@@ -148,21 +153,22 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 auto 30px;
     }
   &__btn{
-    padding: 16px 45px;
-    border:none;
-    border-radius: 3px;
-    display: block;
-    font-size: 18px;
-    line-height: 18px;
-    margin: 0 auto 112px;
-    background-color: $accent;
-    color: $bg-color;
-    cursor:pointer;
+      padding: 16px 45px;
+      border:none;
+      border-radius: 3px;
+      display: block;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0 auto 112px;
+      background-color: $accent;
+      color: $bg-color;
+      cursor:pointer;
     }
-    .slick-dots{
+   
+      .slick-dots{
       bottom: 50px;
     }
-    button{
+    .slick-next,.slick-prev {
       padding: 0;
     }
     .slick-arrow{
@@ -193,15 +199,67 @@ h1,h2,h3,h4,h5,h6{
        min-height: 100px;
      }
  }
+ .top-slider {  
+    &__item{
+      min-height: 465px;
+    }
+    &__title{
+    padding: 87px 0 0;
+    &::after{
+      display: none;
+    }
+  }
+   &__text {
+    font-size: 18px;
+    font-family: 'Roboto-Condensed-Regular';
+    font-weight: 400;
+    max-width: 590px;
+    margin: 0 auto 32px;
+    display: block;
+  }
+}
 }
 @media (min-width: 1024px){
   .container{
     max-width: 1200px;
     margin: 0 auto;
-  } 
+  }
+.top-slider{
+&__title{
+  padding: 100px 0 0;
+  font-size: 84px;
+  line-height: 84px;
+  letter-spacing: 2px;
+  }
+  &__item{
+    min-height: 620px;
+  }
+&__text{
+  margin-bottom: 45px;
+}
+.slick-dots{
+  bottom: 100px;
+}
+  }
+  
 } 
 @media (min-width: 1440px){
   .container{
     max-width: 1320px;
-  } 
+  }
+  .top-slider{
+    &__title{
+      padding: 108px 0 0;
+      font-size: 96px;
+      line-height: 96px;
+      }
+    &__item{
+       min-height: 668px;
+      }
+    &__text{
+        max-width: 889px;
+        font-size: 24px;
+        line-height: 24px;        
+      }   
+    }  
 } 
