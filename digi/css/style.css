@@ -1,3 +1,13 @@
+.call__inner-text {
+  font-family: 'Dosis-Light';
+  font-weight: 300;
+}
+
+.call__inner-title, .call__inner-btn {
+  font-family: 'Roboto-Medium';
+  font-weight: 500;
+}
+
 @font-face {
   font-family: 'Roboto-Medium';
   font-weight: 500;
@@ -51,6 +61,15 @@ li {
   margin: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
   font-weight: 400;
@@ -67,6 +86,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   padding: 0 20px;
+}
+
+.desctop-br {
+  display: none;
 }
 
 .header {
@@ -108,6 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-align: center;
   outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .top-slider {
@@ -172,6 +196,33 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
+.call {
+  padding: 40px 0;
+  background-color: #2B4074;
+  color: #fff;
+  text-align: center;
+}
+.call__inner-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.call__inner-text {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.call__inner-btn {
+  background-color: #F9F6e5;
+  border-radius: 3px;
+  padding: 16px;
+  color: #2B4074;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+}
+
 @media (min-width: 640px) {
   .container {
     padding: 0 30px;
@@ -232,12 +283,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (min-width: 768px) {
-  .container {
-    padding: 0 40px;
+  .call {
+    text-align: left;
   }
-
-  .header__inner {
-    min-height: 100px;
+  .call__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .call__box {
+    max-width: 430px;
+  }
+  .call__text {
+    margin-bottom: 0;
   }
 
   .top-slider__item {
@@ -259,6 +317,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (min-width: 1024px) {
+  .call__box {
+    max-width: 695px;
+  }
+  .call__inner-text {
+    margin-bottom: 40px;
+  }
+
+  .desctop-br {
+    display: block;
+  }
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -281,6 +350,28 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (min-width: 1440px) {
+  .top-slider .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+  .top-slider .slick-prev {
+    top: calc(50% - 70px);
+  }
+  .top-slider .slick-next {
+    bottom: calc(50% - 70px);
+  }
+
+  .call__box {
+    max-width: 796px;
+  }
+  .call__inner {
+    padding: 0 80px;
+  }
+
+  .call__inner-tex {
+    max-width: 430px;
+  }
+
   .container {
     max-width: 1320px;
   }

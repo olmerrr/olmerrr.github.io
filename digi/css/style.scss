@@ -15,6 +15,13 @@ li{
   padding: 0;
   margin: 0;
 }
+a{
+  color:inherit;
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
 body{
   font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
   font-weight: 400;
@@ -29,6 +36,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .container{
   padding: 0 20px;
+}
+.desctop-br{
+  display: none;
 }
 .header{
    background-color: $accent;
@@ -68,6 +78,7 @@ h1,h2,h3,h4,h5,h6{
     color:#fff;
     text-align: center;
     outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .top-slider {
     background: rgba(33, 33, 33, 0.5);
@@ -127,7 +138,39 @@ h1,h2,h3,h4,h5,h6{
         border: 1px solid #476E40;
         outline: none;
       }
-  } 
+    }
+      .call {
+        padding: 40px 0;
+        background-color: $accent;
+        color:#fff;
+        text-align: center;
+        &__inner-title {
+          @extend %roboto-500;
+          font-size: 24px;
+          line-height: 24px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        &__inner-text {
+          @extend %dosis-300;
+          font-weight: 300;
+          margin-bottom: 40px;
+        }
+        &__inner-btn{
+          background-color: $bg-color;
+          border-radius: 3px;
+          padding: 16px;
+          color: $accent;
+          font-size: 18px;
+          @extend %roboto-500;
+          outline:none;
+          border:none;
+          text-transform: uppercase;
+        }
+  }
+
+      
+   
 
 @media (min-width: 640px){
   .container{
@@ -191,14 +234,20 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 @media (min-width: 768px){
-  .container{
-    padding: 0 40px;
-  } 
-  .header{
-     &__inner{
-       min-height: 100px;
-     }
- }
+  .call{
+    text-align: left;
+      &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    &__box{
+      max-width: 430px;
+    }
+    &__text{
+      margin-bottom: 0;
+    }
+  }
  .top-slider {  
     &__item{
       min-height: 465px;
@@ -220,6 +269,19 @@ h1,h2,h3,h4,h5,h6{
 }
 }
 @media (min-width: 1024px){
+  .call{
+    &__box{
+      max-width: 695px;
+    }
+      &__inner-text {
+        margin-bottom: 40px;
+      }
+    
+    
+  }
+  .desctop-br{
+    display: block;
+  }
   .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -241,9 +303,31 @@ h1,h2,h3,h4,h5,h6{
   bottom: 100px;
 }
   }
-  
 } 
 @media (min-width: 1440px){
+  .top-slider{
+    .slick-arrow{
+      width: 70px;
+      height: 70px;
+    }
+    .slick-prev{
+      top: calc(50% - 70px);
+    }
+    .slick-next{
+      bottom: calc(50% - 70px);
+    }
+  }
+  .call{
+     &__box{
+      max-width: 796px;
+     }
+     &__inner{
+       padding: 0 80px;
+      }
+   }
+   .call__inner-tex{
+     max-width: 430px;
+   }
   .container{
     max-width: 1320px;
   }
