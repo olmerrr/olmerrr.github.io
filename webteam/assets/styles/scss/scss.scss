@@ -115,8 +115,6 @@ ul, li {
   width: 920px;
   height: 500px;
 } 
-.icons {
-}
 .icons__box {
   display: flex;
 }
@@ -165,12 +163,12 @@ ul, li {
   }
 }
 .logo-animation{
--moz-transition: all 1s linear;
--o-transition: all 1s linear;
--webkit-transition: all 1s linear;
-  &:hover{
-    transform: scale(1.1)
-  }
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+    &:hover{
+      transform: scale(1.1)
+    }
   cursor: pointer;
 }
 
@@ -184,7 +182,6 @@ ul, li {
 }
 .img-side {
  color:$second-color;
-  
   padding: 65px 0;
 }
 .img-side__wrapper {
@@ -209,8 +206,6 @@ ul, li {
 }
 .img-side__info p{
   margin-top: 25px;
-}
-.testimonial{
 }
 .testimonial__title{
   font-size: 35px;
@@ -379,7 +374,7 @@ ul, li {
 .custom-checkbox:checked+label::before {
   border-color: #fff;
   background-color: #fff;
-  background-image: url(/assets/styles/img/check.svg);
+  background-image: url(..img/check.svg);
 }
 
 /* стили для чекбокса, находящегося в состоянии disabled */

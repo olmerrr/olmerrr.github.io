@@ -489,7 +489,7 @@ ul, li {
 .custom-checkbox:checked + label::before {
   border-color: #fff;
   background-color: #fff;
-  background-image: url(/assets/styles/img/check.svg);
+  background-image: url(../img/check.svg);
 }
 
 /* стили для чекбокса, находящегося в состоянии disabled */
