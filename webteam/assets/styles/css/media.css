@@ -1,0 +1,519 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open+Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #2D2D2D;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-image: url(../img/bgc.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 400px;
+}
+
+.header__wrapper {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+}
+
+.header__inner {
+  max-width: 550px;
+}
+
+.header__logo {
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 57px;
+  height: 72px;
+}
+
+.header__title {
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.header__info-content {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.header__btn a {
+  border-radius: 20px;
+  background-color: #FDB913;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  -webkit-box-shadow: 0 5px 20px #707070;
+          box-shadow: 0 5px 20px #707070;
+}
+
+.features {
+  background: #F8F8F8;
+  color: #2D2D2D;
+}
+
+.features__inner {
+  padding: 65px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__info {
+  max-width: 550px;
+}
+
+.features__info p {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.features__title {
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.features__img {
+  max-width: 475px;
+}
+
+.video {
+  text-align: center;
+  padding: 65px 0;
+  background-color: #fff;
+}
+
+.video__title {
+  font-size: 35px;
+  line-height: 35px;
+  margin-bottom: 46px;
+}
+
+.video__iframe {
+  width: 920px;
+  height: 500px;
+}
+
+.icons__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons__item {
+  max-width: 350px;
+  margin-right: 30px;
+}
+
+.icons__picture {
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.icons__picture:hover {
+  -webkit-animation: swing 0.6s ease;
+  animation: swing 0.6s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.logo-animation {
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  cursor: pointer;
+}
+.logo-animation:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.icons__title {
+  color: #707070;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.img-side {
+  color: #ffffff;
+  padding: 65px 0;
+}
+
+.img-side__wrapper {
+  background-size: cover;
+  background-color: #FDB913;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-side__picture {
+  max-width: 960px;
+  max-height: 520px;
+}
+
+.img-side__content {
+  padding: 50px 450px 50px 110px;
+}
+
+.img-side__title {
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.img-side__info p {
+  margin-top: 25px;
+}
+
+.testimonial__title {
+  font-size: 35px;
+  line-height: 55px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.slick-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__item {
+  max-width: 285px;
+  margin-right: 100px;
+}
+
+.slider__item-author p {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.slick-btn {
+  width: 20px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 800;
+}
+
+.slick-prev {
+  position: absolute;
+  left: -50px;
+  background-image: url(../img/arrow.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slick-next {
+  position: absolute;
+  right: -50px;
+  background-image: url(../img/slider-arrow.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.clients__inner {
+  padding: 65px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.clients__inner img {
+  margin-right: 72px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #446A82;
+  color: #fff;
+  padding: 60px 0 50px;
+}
+
+.form__title {
+  text-align: center;
+  font-size: 35px;
+  max-width: 590px;
+  margin-bottom: 10px;
+  line-height: 45px;
+}
+
+.form__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 540px;
+  font-size: 20px;
+}
+.form__inner label p {
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.form__inner .form__info {
+  color: #446A82;
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+}
+
+.form__textarea {
+  color: #446A82;
+  height: 110px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 2px;
+  margin: 40px 0;
+  line-height: 26px;
+}
+
+.form__summ-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__btn {
+  margin-left: auto;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 50px;
+  background-color: #FDB913;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-box-shadow: 0 5px 20px #5A4209;
+          box-shadow: 0 5px 20px #5A4209;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus + label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked) + label::before {
+  border-color: #80bdff;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox:checked + label::before {
+  border-color: #fff;
+  background-color: #fff;
+  background-image: url(/assets/styles/img/check.svg);
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+.checkbox {
+  margin-bottom: 1em;
+}
+
+.copyright__inner {
+  padding: 50px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright__logo {
+  margin-right: 35px;
+}
