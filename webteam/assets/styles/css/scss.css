@@ -1,0 +1,499 @@
+@charset "UTF-8";
+/* line 1, ../webteam/assets/styles/scss/scss.scss */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* line 14, ../webteam/assets/styles/scss/scss.scss */
+body {
+  font-family: 'Open+Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #2D2D2D;
+}
+
+/* line 21, ../webteam/assets/styles/scss/scss.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 26, ../webteam/assets/styles/scss/scss.scss */
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 31, ../webteam/assets/styles/scss/scss.scss */
+.header {
+  background-image: url(../img/bgc.jpg);
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+/* line 36, ../webteam/assets/styles/scss/scss.scss */
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 400px;
+}
+
+/* line 41, ../webteam/assets/styles/scss/scss.scss */
+.header__wrapper {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+/* line 47, ../webteam/assets/styles/scss/scss.scss */
+.header__inner {
+  max-width: 550px;
+}
+
+/* line 50, ../webteam/assets/styles/scss/scss.scss */
+.header__logo {
+  margin-bottom: 40px;
+}
+
+/* line 53, ../webteam/assets/styles/scss/scss.scss */
+.logo {
+  width: 57px;
+  height: 72px;
+}
+
+/* line 57, ../webteam/assets/styles/scss/scss.scss */
+.header__title {
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+/* line 62, ../webteam/assets/styles/scss/scss.scss */
+.header__info-content {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 67, ../webteam/assets/styles/scss/scss.scss */
+.header__btn a {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #FDB913;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  box-shadow: 0 5px 20px #707070;
+}
+
+/* line 77, ../webteam/assets/styles/scss/scss.scss */
+.features {
+  background: #F8F8F8;
+  color: #2D2D2D;
+}
+
+/* line 81, ../webteam/assets/styles/scss/scss.scss */
+.features__inner {
+  padding: 65px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* line 87, ../webteam/assets/styles/scss/scss.scss */
+.features__info {
+  max-width: 550px;
+}
+
+/* line 90, ../webteam/assets/styles/scss/scss.scss */
+.features__info p {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+/* line 94, ../webteam/assets/styles/scss/scss.scss */
+.features__title {
+  font-size: 35px;
+  line-height: 45px;
+}
+
+/* line 99, ../webteam/assets/styles/scss/scss.scss */
+.features__img {
+  margin-top: -20px;
+  margin-left: 50px;
+  max-width: 475px;
+}
+
+/* line 104, ../webteam/assets/styles/scss/scss.scss */
+.video {
+  text-align: center;
+  padding: 65px 0;
+  background-color: #fff;
+}
+
+/* line 110, ../webteam/assets/styles/scss/scss.scss */
+.video__title {
+  font-size: 35px;
+  line-height: 35px;
+  margin-bottom: 46px;
+}
+
+/* line 115, ../webteam/assets/styles/scss/scss.scss */
+.video__iframe {
+  width: 920px;
+  height: 500px;
+}
+
+/* line 119, ../webteam/assets/styles/scss/scss.scss */
+.icons__box {
+  display: flex;
+}
+
+/* line 123, ../webteam/assets/styles/scss/scss.scss */
+.icons__item {
+  max-width: 350px;
+  margin-right: 30px;
+}
+
+/* line 128, ../webteam/assets/styles/scss/scss.scss */
+.icons__picture {
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+/* line 134, ../webteam/assets/styles/scss/scss.scss */
+.icons__picture img {
+  height: 64px;
+}
+
+/* line 138, ../webteam/assets/styles/scss/scss.scss */
+.icons__picture:hover {
+  -webkit-animation: swing 0.6s ease;
+  animation: swing 0.6s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 170, ../webteam/assets/styles/scss/scss.scss */
+.logo-animation {
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  cursor: pointer;
+}
+
+/* line 174, ../webteam/assets/styles/scss/scss.scss */
+.logo-animation:hover {
+  transform: scale(1.1);
+}
+
+/* line 182, ../webteam/assets/styles/scss/scss.scss */
+.icons__title {
+  color: #707070;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 188, ../webteam/assets/styles/scss/scss.scss */
+.img-side {
+  color: #ffffff;
+  padding: 65px 0;
+}
+
+/* line 192, ../webteam/assets/styles/scss/scss.scss */
+.img-side__wrapper {
+  background-color: #FDB913;
+  display: flex;
+}
+
+/* line 196, ../webteam/assets/styles/scss/scss.scss */
+.img-side__picture {
+  max-width: 960px;
+  max-height: 520px;
+}
+
+/* line 200, ../webteam/assets/styles/scss/scss.scss */
+.img-side__content {
+  padding: 50px 450px 50px 110px;
+}
+
+/* line 204, ../webteam/assets/styles/scss/scss.scss */
+.img-side__title {
+  font-size: 35px;
+  line-height: 45px;
+}
+
+/* line 208, ../webteam/assets/styles/scss/scss.scss */
+.img-side__info p {
+  margin-top: 25px;
+}
+
+/* line 211, ../webteam/assets/styles/scss/scss.scss */
+.testimonial__title {
+  font-size: 35px;
+  line-height: 55px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* line 217, ../webteam/assets/styles/scss/scss.scss */
+.slick-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 222, ../webteam/assets/styles/scss/scss.scss */
+.slider__item {
+  max-width: 285px;
+  padding: 20px;
+}
+
+/* line 227, ../webteam/assets/styles/scss/scss.scss */
+.slider__item-author p {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* line 232, ../webteam/assets/styles/scss/scss.scss */
+.slick-btn {
+  width: 20px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 800;
+}
+
+/* line 241, ../webteam/assets/styles/scss/scss.scss */
+.slick-prev {
+  position: absolute;
+  left: -50px;
+  background-image: url(../img/arrow.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 248, ../webteam/assets/styles/scss/scss.scss */
+.slick-next {
+  position: absolute;
+  right: -50px;
+  background-image: url(../img/slider-arrow.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 255, ../webteam/assets/styles/scss/scss.scss */
+.clients__inner {
+  padding: 65px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* line 260, ../webteam/assets/styles/scss/scss.scss */
+.clients__inner img {
+  padding: 30px;
+}
+
+/* line 264, ../webteam/assets/styles/scss/scss.scss */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #446A82;
+  color: #fff;
+  padding: 60px 0 50px;
+}
+
+/* line 272, ../webteam/assets/styles/scss/scss.scss */
+.form__title {
+  text-align: center;
+  font-size: 35px;
+  max-width: 590px;
+  margin-bottom: 10px;
+  line-height: 45px;
+}
+
+/* line 279, ../webteam/assets/styles/scss/scss.scss */
+.form__inner {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  font-size: 20px;
+}
+
+/* line 284, ../webteam/assets/styles/scss/scss.scss */
+.form__inner label p {
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* line 290, ../webteam/assets/styles/scss/scss.scss */
+.form__info {
+  color: #446A82;
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  font-size: 20px;
+}
+
+/* line 298, ../webteam/assets/styles/scss/scss.scss */
+.form__textarea {
+  color: #446A82;
+  height: 110px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 2px;
+  margin: 40px 0;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/* line 309, ../webteam/assets/styles/scss/scss.scss */
+.form__summ-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 314, ../webteam/assets/styles/scss/scss.scss */
+.form__btn {
+  margin-left: auto;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 50px;
+  background-color: #FDB913;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 5px 20px #5A4209;
+}
+
+/* для элемента input c type="checkbox" */
+/* line 327, ../webteam/assets/styles/scss/scss.scss */
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+/* line 334, ../webteam/assets/styles/scss/scss.scss */
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-size: 20px;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+/* line 342, ../webteam/assets/styles/scss/scss.scss */
+.custom-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+/* line 358, ../webteam/assets/styles/scss/scss.scss */
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+/* line 363, ../webteam/assets/styles/scss/scss.scss */
+.custom-checkbox:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+/* line 369, ../webteam/assets/styles/scss/scss.scss */
+.custom-checkbox:focus + label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+/* line 374, ../webteam/assets/styles/scss/scss.scss */
+.custom-checkbox:focus:not(:checked) + label::before {
+  border-color: #80bdff;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+/* line 379, ../webteam/assets/styles/scss/scss.scss */
+.custom-checkbox:checked + label::before {
+  border-color: #fff;
+  background-color: #fff;
+  background-image: url(../img/check.svg);
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+/* line 386, ../webteam/assets/styles/scss/scss.scss */
+.custom-checkbox:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+/* line 392, ../webteam/assets/styles/scss/scss.scss */
+.copyright__inner {
+  padding: 50px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 399, ../webteam/assets/styles/scss/scss.scss */
+.copyright__logo {
+  margin-right: 35px;
+}
+
+/*# sourceMappingURL=scss.css.map */
