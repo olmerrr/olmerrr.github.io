@@ -231,8 +231,7 @@
     font-size: 20px;
     line-height: 30px;
   }
- 
-  
+
 }
 @media(max-width:620px){
   .features__img{
@@ -256,7 +255,12 @@
     font-size: 14px;
   }
 }
-  
+@media(max-width:410px){
+  .video__iframe{
+    max-width:270px;
+    max-height:185px;
+}
+}
 @media(max-width:350px){
   .container{
     max-width: 320px;

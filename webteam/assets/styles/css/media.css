@@ -286,11 +286,11 @@
 }
 
 @media (max-width: 620px) {
-  /* line 238, ../webteam/assets/styles/scss/media.scss */
+  /* line 237, ../webteam/assets/styles/scss/media.scss */
   .features__img {
     max-width: 340px;
   }
-  /* line 241, ../webteam/assets/styles/scss/media.scss */
+  /* line 240, ../webteam/assets/styles/scss/media.scss */
   .video__iframe {
     max-width: 340px;
     max-height: 215px;
@@ -298,45 +298,53 @@
 }
 
 @media (max-width: 480px) {
-  /* line 247, ../webteam/assets/styles/scss/media.scss */
+  /* line 246, ../webteam/assets/styles/scss/media.scss */
   .features__info {
     max-width: 240px;
   }
-  /* line 250, ../webteam/assets/styles/scss/media.scss */
+  /* line 249, ../webteam/assets/styles/scss/media.scss */
   .video__iframe {
     max-width: 320px;
     max-height: 215px;
   }
-  /* line 254, ../webteam/assets/styles/scss/media.scss */
+  /* line 253, ../webteam/assets/styles/scss/media.scss */
   .icons__content-info,
   .slider__inner {
     font-size: 14px;
   }
 }
 
+@media (max-width: 410px) {
+  /* line 259, ../webteam/assets/styles/scss/media.scss */
+  .video__iframe {
+    max-width: 270px;
+    max-height: 185px;
+  }
+}
+
 @media (max-width: 350px) {
-  /* line 261, ../webteam/assets/styles/scss/media.scss */
+  /* line 265, ../webteam/assets/styles/scss/media.scss */
   .container {
     max-width: 320px;
   }
-  /* line 264, ../webteam/assets/styles/scss/media.scss */
+  /* line 268, ../webteam/assets/styles/scss/media.scss */
   .features__img {
     max-width: 260px;
   }
-  /* line 267, ../webteam/assets/styles/scss/media.scss */
+  /* line 271, ../webteam/assets/styles/scss/media.scss */
   .header__picture-man {
     max-width: 176px;
     max-height: 269px;
   }
-  /* line 271, ../webteam/assets/styles/scss/media.scss */
+  /* line 275, ../webteam/assets/styles/scss/media.scss */
   .video__iframe {
     max-width: 260px;
   }
-  /* line 274, ../webteam/assets/styles/scss/media.scss */
+  /* line 278, ../webteam/assets/styles/scss/media.scss */
   .slick-prev {
     left: -20px;
   }
-  /* line 277, ../webteam/assets/styles/scss/media.scss */
+  /* line 281, ../webteam/assets/styles/scss/media.scss */
   .slick-next {
     right: -20px;
   }
